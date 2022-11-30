@@ -1,11 +1,4 @@
 /* Reset CSS */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  position: relative;
-}
 :root {
   --background-color: #002632;
   --second-background: #f5f5f5;
@@ -17,19 +10,28 @@
   --font-title: "Reem Kufi Fun", sans-serif;
   --font-text: "Inter", sans-serif;
 }
-.wrapper {
-  margin: 0 auto;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* position: relative; */
 }
-.container {
+
+/* .container {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
-}
+} */
 
-.container > div > img {
+/* .container > div > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+} */
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Body Styles */
@@ -38,7 +40,13 @@ body {
   line-height: 1;
   font-weight: var(--font-text);
   color: var(--white-text);
+  /* font-family: serif; */
 }
+
+a {
+  text-decoration: none;
+}
+
 h1,
 h2 {
   font-family: var(--font-title);
@@ -62,15 +70,14 @@ ul {
 
 header {
   background-color: var(--background-color);
-}
-.header {
-  padding-top: 32px;
-}
-.header-container {
+  /* padding-top: 32px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* height: 70px; */
+  padding: 32px 197px 32px 135px;
 }
+
 .menu {
   font-family: var(--font-text);
   list-style-type: none;
@@ -79,12 +86,14 @@ header {
   gap: 0 45px;
   font-size: 20px;
 }
+.menu a {
+  color: var(--white-text);
+}
 .menu-item i {
   display: none;
 }
-.header-container a {
+.logo a {
   color: var(--white-text);
-  text-decoration: none;
 }
 .logo {
   font-family: var(--font-title);
@@ -100,24 +109,38 @@ header {
 .contact i {
   color: var(--primary-color);
 }
-.content-container {
-  height: 700px;
-  display: flex;
-  justify-content: space-between;
-  gap: 0 37px;
-  padding-top: 60px;
+/* Hero */
+
+.hero {
+  background-color: var(--background-color);
+  padding: 50px 135px 0 135px;
+  position: relative;
+  width: 100%;
 }
+
+.content-container {
+  height: 840px;
+  display: flex;
+  gap: 0 100px;
+  justify-content: space-between;
+  /* gap: 0 37px; */
+  /* padding-top: 60px; */
+}
+
 .content-heading {
   font-family: var(--font-title);
   font-weight: 600;
   font-size: 96px;
   padding-bottom: 30px;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   line-height: calc(106 / 96);
 }
 .content-left {
-  padding-top: 20px;
+  width: 602px;
+  height: 562px;
+  margin: 60px 0px 30px 0px;
 }
+
 .content-left p {
   width: 100%;
   max-width: 602px;
@@ -127,6 +150,11 @@ header {
   font-size: 20px;
   line-height: calc(32 / 20);
   padding-bottom: 75px;
+}
+.content-image {
+  width: 563px;
+  height: 657px;
+  /* margin: 61px 35px 0px 0px; */
 }
 .button {
   display: inline-block;
@@ -183,15 +211,19 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 0 120px;
+  /* gap: 0 120px; */
   padding: 49px 85px;
   background-color: var(--white-text);
   box-shadow: 0px 20px 70px rgba(0, 0, 0, 0.09);
-  top: 70px;
+  position: absolute;
+  bottom: -80px;
+  left: 10vw;
+  right: 10vw;
 }
 .info-content {
   text-align: center;
   font-family: var(--font-text);
+  line-height: 1.2;
 }
 .info-number {
   font-size: 48px;
@@ -203,9 +235,10 @@ header {
   font-weight: 400;
 }
 .about-container {
-  height: 700px;
-  padding-top: 140px;
-  padding-bottom: 30px;
+  /* height: 700px; */
+  padding: 140px 135px 140px 135px;
+  /* padding-top: 140px;
+  padding-bottom: 30px; */
 }
 .about-heading-title {
   font-family: var(--font-title);
@@ -224,23 +257,24 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0 200px;
+  /* gap: 0 200px; */
 }
 .about-img img {
   width: 404px;
-  height: 458px;
+  /* height: 458px; */
   position: relative;
   z-index: 2;
-  top: -40px;
-  left: 45px;
+  padding-top: 60px;
+  /* top: -40px;
+  left: 45px; */
 }
 .about-box-top {
   position: relative;
   height: 120px;
   width: 92px;
   background-color: var(--primary-color);
-  float: left;
-  top: 40px;
+  top: 20px;
+  left: 50px;
   z-index: 1;
 }
 .about-box-bot {
@@ -250,8 +284,8 @@ header {
   background-color: var(--primary-color);
   float: right;
   z-index: 1;
-  top: -120px;
-  left: 90px;
+  bottom: -470px;
+  right: 50px;
 }
 .about-content {
   font-family: var(--font-text);
@@ -259,6 +293,8 @@ header {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.2;
+  /* height: 410px; */
+  width: 511px;
   height: 410px;
   top: -50px;
   display: flex;
@@ -266,7 +302,7 @@ header {
   justify-content: space-between;
 }
 .about-content-a {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .button-contact {
   text-decoration: none;
@@ -277,8 +313,8 @@ header {
 /* Moment Styles */
 
 .moments-container {
-  margin-top: 300px;
   text-align: center;
+  padding-top: 50px;
 }
 .moments-heading {
   padding-bottom: 60px;
@@ -303,10 +339,11 @@ header {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 600px);
+  justify-content: center;
+  gap: 50px 0;
   /* gap: 50px 400px; */
   /* width: 100%;
   max-width: 1170px; */
-  height: auto;
 }
 .picture-title,
 .picture-desc {
@@ -330,32 +367,39 @@ header {
 .project {
   background-color: var(--background-color);
   width: 100%;
-  height: 818px;
 }
 .project-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 53px;
-  gap: 0 276px;
+  padding: 53px 135px 22px 135px;
+  /* padding-top: 53px;
+  gap: 0 276px; */
 }
 .project-heading {
   font-family: var(--font-title);
   color: var(--white-text);
   font-size: 64px;
 }
-.project-desc {
+.project-desc p {
   line-height: 1.5;
+  color: var(--white-text);
 }
-.project-see-all {
-  float: right;
+.see-all {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 135px;
+  font-family: var(--font-text);
   color: var(--primary-color);
   font-weight: bold;
+  text-decoration: underline;
 }
 .project-picture {
   display: flex;
-  padding-top: 50px;
-  gap: 0 10px;
+  justify-content: space-between;
+  padding: 22px 135px 72px 135px;
+  /* padding-top: 50px;
+  gap: 0 10px; */
 }
 .project-desc {
   font-family: var(--font-text);
@@ -376,7 +420,9 @@ header {
 }
 .gallery-heading {
   display: flex;
-  gap: 0 110px;
+  justify-content: space-around;
+  align-items: center;
+  /* gap: 0 110px; */
   padding-bottom: 60px;
 }
 .gallery-title {
@@ -386,17 +432,22 @@ header {
   width: 100%;
   max-width: 522px;
 }
-.gallery-desc {
+.gallery-desc p {
   font-family: var(--font-text);
   color: var(--gray-text);
   font-size: 18px;
-  width: 100%;
+  line-height: 1.5;
   max-width: 502px;
 }
 .gallery-picture {
   padding-bottom: 140px;
 }
 .gallery-picture {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px 100px;
 }
 
 /* CTA Styles */
@@ -407,13 +458,19 @@ header {
   height: 475px;
 }
 .cta-container {
+  padding: 88px 164px 88px 165px;
   text-align: center;
 }
 .cta-heading {
-  padding: 88px 0 46px 0;
-  text-align: center;
+  padding-bottom: 46px;
+  font-size: 64px;
+  /* text-align: center; */
 }
-.cta-desc {
+.cta-desc p {
+  font-family: var(--font-text);
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 1.5;
   text-align: center;
   padding-bottom: 51px;
 }
@@ -432,8 +489,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 65px;
-  text-align: center;
+  padding: 65px 135px 36px 135px;
+  /* text-align: center; */
 }
 .footer-logo {
   font-family: var(--font-title);
@@ -449,10 +506,10 @@ footer {
   list-style-type: none;
   display: flex;
   align-items: center;
-  gap: 0 45px;
+  gap: 0 100px;
   font-size: 20px;
   margin-left: 150px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .footer-nav-link {
   text-align: center;
@@ -462,15 +519,18 @@ footer {
   color: var(--white-text);
 }
 .footer-phone a {
+  font-family: var(--font-text);
   text-decoration: none;
   color: var(--white-text);
 }
 .footer-btn {
-  padding: 80px;
-  margin-left: 450px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
   font-family: var(--font-text);
   font-size: 18px;
 }
 .footer-btn a {
+  text-decoration: underline;
   color: var(--white-text);
 }
