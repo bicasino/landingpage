@@ -432,9 +432,6 @@
     font-weight: bold;
     display: none;
   }
-  .content-container {
-    height: auto;
-  }
   .menu {
     flex-direction: column;
     align-items: flex-end;
@@ -472,6 +469,7 @@
   .info-container {
     padding: 30px 60px;
     gap: 0 30px;
+    bottom: -50px;
   }
   .info-number {
     font-size: 18px;
@@ -609,7 +607,6 @@
     margin: 0;
     text-align: center;
   }
-
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -667,6 +664,71 @@
 }
 @media (min-width: 993px) and (max-width: 1280px) {
   .content-heading {
+    font-size: 62px;
+  }
+  .content-left p {
+    font-size: 16px;
+  }
+  .content-image {
+    padding: 0;
+  }
+  .content-image img {
+    height: 500px;
+    width: 400px;
+  }
+  .about-info {
+    gap: 0 100px;
+  }
+  .about-img img {
+    height: 500px;
+    width: 400px;
+  }
+  .about-box-top {
+    top: -480px;
+    left: -50px;
+  }
+  .about-box-bot {
+    float: none;
+    right: -350px;
+    bottom: -540px;
+  }
+  .grid {
+    grid-template-columns: repeat(1, 600px);
+    /* margin-left: 200px; */
+  }
+  .project-heading {
+    font-size: 54px;
+  }
+  .project-desc {
+    font-size: 12px;
+  }
+  .project-see-all {
+    font-size: 14px;
+  }
+  .project-picture {
+      display: grid;
+      grid-template-columns: repeat(2, 300px);
+      gap: 30px 0;
+  }
+  .gallery-title {
+    font-size: 48px;
+    margin-left: 30px;
+  }
+  .gallery-desc {
+    font-size: 12px;
+  }
+  .gallery-picture {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+    gap: 30px 100px;
+  }
+  .footer-container {
+    padding: 65px 100px 36px 100px;
+  }
+}
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .content-heading {
     font-size: 72px;
   }
   .content-left p {
@@ -676,13 +738,24 @@
     height: 500px;
     width: 400px;
   }
+  .color-box-top {
+    right: 50px;
+  }
+  .about-info {
+    gap: 0 100px;
+  }
   .about-img img {
     height: 500px;
     width: 400px;
   }
+  .about-box-bot {
+    float: none;
+    right: -430px;
+    bottom: -550px;
+  }
   .grid {
     grid-template-columns: repeat(1, 600px);
-    margin-left: 200px;
+    /* margin-left: 200px; */
   }
   .project-heading {
     font-size: 54px;
@@ -712,8 +785,5 @@
   }
   .footer-logo {
     margin-left: 30px;
-  }
-  .footer-btn {
-    margin-left: 350px;
   }
 }
