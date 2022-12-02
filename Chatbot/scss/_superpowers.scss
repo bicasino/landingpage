@@ -1,0 +1,23 @@
+.superpowers {
+  background-color: $primaryColor_1;
+  @include flexrow();
+  padding: 90px 135px 90px 135px;
+  justify-content: space-around;
+  color: $textColor;
+  &-img {
+    padding: 50px 0px 30px 0;
+  }
+  &-content {
+    font-family: $primaryFont;
+  }
+  &-heading {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  &-desc {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+}

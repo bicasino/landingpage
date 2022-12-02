@@ -1,0 +1,1614 @@
+$res_320: "only screen and (min-width: 320px) and (max-width: 374px)";
+$res_375: "only screen and (min-width: 375px) and (max-width: 424px)";
+$res_425: "only screen and (min-width: 425px) and (max-width: 767px)";
+$res_768: "only screen and (min-width: 768px) and (max-width: 991px)";
+$res_992: "only screen and (min-width: 992px) and (max-width: 1023px)";
+$res_1024: "only screen and (min-width: 1024px) and (max-width: 1199px)";
+$res_1200: "only screen and (min-width: 1200px)";
+
+@mixin responsive_320() {
+  @media #{$res_320} {
+    @content;
+  }
+}
+@mixin responsive_375() {
+  @media #{$res_375} {
+    @content;
+  }
+}
+@mixin responsive_425() {
+  @media #{$res_425} {
+    @content;
+  }
+}
+@mixin responsive_768() {
+  @media #{$res_768} {
+    @content;
+  }
+}
+@mixin responsive_992() {
+  @media #{$res_992} {
+    @content;
+  }
+}
+@mixin responsive_1024() {
+  @media #{$res_1024} {
+    @content;
+  }
+}
+@mixin responsive_1200() {
+  @media #{$res_1200} {
+    @content;
+  }
+}
+
+@include responsive_320 {
+  .header-container {
+    padding: 35px 133px 30px 144px;
+    gap: 0 100px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .btn-getdemo {
+    font-size: 10px;
+    margin: 0;
+    margin-right: 5px;
+    padding: 5px 30px;
+  }
+  .btn-getstarted {
+    width: 90%;
+    text-align: center;
+    margin-left: 1rem;
+  }
+  .hero {
+    &-image {
+      grid-template-columns: none;
+      padding: 0;
+      & img {
+        width: 300px;
+        margin-bottom: 10px;
+      }
+    }
+    &-heading {
+      padding: 0;
+      margin: 30px 0;
+      font-size: 38px;
+    }
+    &-desc {
+      align-items: baseline;
+      flex-direction: column;
+    }
+    &-input input {
+      padding: 0;
+    }
+  }
+  .campaign {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin-right: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .sales {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-img {
+      margin: 0;
+      margin-top: 30px;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .support {
+    flex-direction: column-reverse;
+    padding: 50px 10px;
+    &-img {
+      margin: 0;
+      margin-top: 30px;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .works {
+    flex-direction: column;
+    padding: 10px 10px;
+    &-img {
+      margin: 0;
+      margin: 30px 0;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+    &-list {
+      grid-template-columns: repeat(2, 145px);
+      grid-template-rows: repeat(2, 60px);
+    }
+  }
+  .superpowers {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-img {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .clients {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-pic {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    &-pic img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+    &-rate {
+      left: 0;
+      padding: 30px 10px;
+    }
+    #left,
+    #right {
+      display: none;
+    }
+  }
+  .subscribe {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-input {
+      font-size: 12px;
+    }
+    &-input input {
+      padding: 0;
+    }
+    #circle,
+    #square {
+      display: none;
+    }
+  }
+  footer {
+    padding: 10px 10px;
+  }
+  .wrapper {
+    flex-direction: column;
+    &-content {
+      padding: 10px;
+      margin: 0;
+    }
+    &-desc {
+      display: none;
+    }
+    .navlinks {
+      & ul,
+      li {
+        display: none;
+      }
+    }
+    &-icon {
+      color: #ffffff;
+      & i {
+        padding: 10px;
+        margin-bottom: 10px;
+        &:hover {
+          color: $btnColor;
+        }
+      }
+    }
+    &-info {
+      font-size: 10px;
+      gap: 0;
+      &-two {
+        margin: 0;
+      }
+    }
+  }
+}
+@include responsive_375 {
+  .header-container {
+    padding: 35px 133px 30px 144px;
+    gap: 0 100px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .btn-getdemo {
+    font-size: 10px;
+    margin: 0;
+    margin-right: 5px;
+    padding: 5px 30px;
+  }
+  .btn-getstarted {
+    width: 90%;
+    text-align: center;
+    margin-left: 1rem;
+  }
+  .hero {
+    &-image {
+      grid-template-columns: none;
+      padding: 0;
+      & img {
+        width: 300px;
+        margin-bottom: 10px;
+      }
+    }
+    &-heading {
+      padding: 0;
+      margin: 30px 0;
+      font-size: 38px;
+    }
+    &-desc {
+      align-items: baseline;
+      flex-direction: column;
+    }
+    &-input input {
+      padding: 0;
+    }
+  }
+  .campaign {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin-right: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .sales {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-img {
+      margin: 0;
+      margin-top: 30px;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .support {
+    flex-direction: column-reverse;
+    padding: 50px 10px;
+    &-img {
+      margin: 0;
+      margin-top: 30px;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .works {
+    flex-direction: column;
+    padding: 10px 10px;
+    &-img {
+      margin: 0;
+      margin: 30px 0;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+    &-list {
+      grid-template-columns: repeat(2, 145px);
+      grid-template-rows: repeat(2, 60px);
+    }
+  }
+  .superpowers {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-img {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .clients {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-pic {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    &-pic img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+    &-rate {
+      left: 0;
+      padding: 30px 10px;
+    }
+    #left,
+    #right {
+      display: none;
+    }
+  }
+  .subscribe {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-input {
+      font-size: 12px;
+    }
+    &-input input {
+      padding: 0;
+    }
+    #circle,
+    #square {
+      display: none;
+    }
+  }
+  footer {
+    padding: 10px 10px;
+  }
+  .wrapper {
+    flex-direction: column;
+    &-content {
+      padding: 10px;
+      margin: 0;
+    }
+    &-desc {
+      display: none;
+    }
+    .navlinks {
+      & ul,
+      li {
+        display: none;
+      }
+    }
+    &-icon {
+      color: #ffffff;
+      & i {
+        padding: 10px;
+        margin-bottom: 10px;
+        &:hover {
+          color: $btnColor;
+        }
+      }
+    }
+    &-info {
+      font-size: 10px;
+      gap: 0;
+      &-two {
+        margin: 0;
+      }
+    }
+  }
+}
+@include responsive_425 {
+  .header-container {
+    padding: 35px 133px 30px 144px;
+    gap: 0 150px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .btn-getdemo {
+    font-size: 10px;
+    margin: 0;
+    padding: 5px 30px;
+  }
+  .btn-getstarted {
+    width: 90%;
+    text-align: center;
+    margin-left: 1rem;
+  }
+  .hero {
+    &-image {
+      grid-template-columns: none;
+      padding: 0;
+      & img {
+        width: 300px;
+        margin-bottom: 10px;
+      }
+    }
+    &-heading {
+      padding: 0;
+      margin: 30px 0;
+      font-size: 38px;
+    }
+    &-desc {
+      align-items: baseline;
+      flex-direction: column;
+    }
+    &-input input {
+      padding: 0;
+    }
+  }
+  .campaign {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin-right: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .sales {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-img {
+      margin: 0;
+      margin-top: 30px;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .support {
+    flex-direction: column-reverse;
+    padding: 50px 10px;
+    &-img {
+      margin: 0;
+      margin-top: 30px;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .works {
+    flex-direction: column;
+    padding: 10px 10px;
+    &-img {
+      margin: 0;
+      margin: 30px 0;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+    &-list {
+      grid-template-columns: repeat(2, 175px);
+      grid-template-rows: repeat(2, 60px);
+    }
+  }
+  .superpowers {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-img {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .clients {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-pic {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    &-pic img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+    &-rate {
+      left: 0;
+      padding: 30px 10px;
+    }
+    #left,
+    #right {
+      display: none;
+    }
+  }
+  .subscribe {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-input {
+      font-size: 12px;
+    }
+    &-input input {
+      padding: 0;
+    }
+    #circle,
+    #square {
+      display: none;
+    }
+  }
+  footer {
+    padding: 10px 10px;
+  }
+  .wrapper {
+    flex-direction: column;
+    &-content {
+      padding: 10px;
+      margin: 0;
+    }
+    &-desc {
+      display: none;
+    }
+    .navlinks {
+      & ul,
+      li {
+        display: none;
+      }
+    }
+    &-icon {
+      color: #ffffff;
+      & i {
+        padding: 10px;
+        margin-bottom: 10px;
+        &:hover {
+          color: $btnColor;
+        }
+      }
+    }
+    &-info {
+      font-size: 10px;
+      gap: 0;
+      &-two {
+        margin: 0;
+      }
+    }
+  }
+}
+@include responsive_768 {
+  .header-container {
+    padding: 35px 133px 30px 144px;
+    gap: 0 375px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .btn-getdemo {
+    font-size: 12px;
+    margin: 0;
+    padding: 5px 30px;
+  }
+  .btn-getstarted {
+    width: 90%;
+    text-align: center;
+    margin-left: 1rem;
+  }
+  .hero {
+    &-image {
+      grid-template-columns: repeat(2, 300px);
+      padding: 0;
+      & img {
+        width: 300px;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-left: 155px;
+        }
+      }
+    }
+    &-heading {
+      padding: 0px 70px;
+      margin: 30px 0;
+      font-size: 50px;
+    }
+    &-desc {
+      align-items: baseline;
+      flex-direction: column;
+    }
+    // &-input input {
+    //   padding: 0;
+    // }
+  }
+  .campaign {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin-right: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .sales {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-img {
+      margin: 0;
+      margin-top: 30px;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .support {
+    flex-direction: column-reverse;
+    padding: 50px 10px;
+    &-img {
+      margin: 0;
+      margin-top: 30px;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .works {
+    flex-direction: column;
+    padding: 10px 10px;
+    &-img {
+      margin: 0;
+      margin: 30px 0;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+    &-list {
+      grid-template-columns: repeat(2, 175px);
+      grid-template-rows: repeat(2, 60px);
+    }
+  }
+  .superpowers {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-img {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .clients {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-pic {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    &-pic img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+    &-rate {
+      left: 0;
+      padding: 30px 10px;
+    }
+    #left,
+    #right {
+      display: none;
+    }
+  }
+  .subscribe {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-input {
+      font-size: 12px;
+    }
+    // &-input input {
+    //   padding: 0;
+    // }
+    #circle,
+    #square {
+      display: none;
+    }
+  }
+  footer {
+    padding: 10px 10px;
+  }
+  .wrapper {
+    flex-direction: column;
+    &-content {
+      padding: 10px;
+      margin: 0;
+    }
+    &-desc {
+      display: none;
+    }
+    .navlinks {
+      & ul,
+      li {
+        display: none;
+      }
+    }
+    &-icon {
+      color: #ffffff;
+      & i {
+        padding: 10px;
+        margin-bottom: 10px;
+        &:hover {
+          color: $btnColor;
+        }
+      }
+    }
+    &-info {
+      font-size: 10px;
+      gap: 0;
+      &-two {
+        margin: 0;
+      }
+    }
+  }
+}
+@include responsive_992 {
+  .header-container {
+    padding: 35px 100px 30px 100px;
+    // gap: 0 375px;
+  }
+  .btn-getdemo {
+    font-size: 12px;
+    margin: 0;
+    padding: 5px 30px;
+  }
+  .btn-getstarted {
+    width: 90%;
+    text-align: center;
+    margin-left: 1rem;
+  }
+  .hero {
+    &-image {
+      grid-template-columns: repeat(2, 350px);
+      padding: 0;
+      margin-left: 100px;
+      & img {
+        width: 300px;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-left: 155px;
+        }
+      }
+    }
+    &-heading {
+      padding: 0px 50px;
+      margin: 30px 0;
+      font-size: 52px;
+    }
+  }
+  .campaign {
+    padding: 50px 10px;
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin-right: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .sales {
+    padding: 50px 10px;
+    &-img {
+      margin: 0;
+      margin-top: 30px;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .support {
+    padding: 50px 10px;
+    &-img {
+      margin: 0;
+      margin-top: 30px;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .works {
+    padding: 10px 10px;
+    &-img {
+      margin: 0;
+      margin: 30px 0;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+    &-list {
+      grid-template-columns: repeat(2, 175px);
+      grid-template-rows: repeat(2, 60px);
+    }
+  }
+  .superpowers {
+    padding: 50px 10px;
+    &-img {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .clients {
+    padding: 50px 10px;
+    &-pic {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    &-pic img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+    &-rate {
+      left: -75px;
+      padding: 30px 10px;
+    }
+    #left,
+    #right {
+      // display: none;
+      margin-left: 65px;
+    }
+  }
+  .subscribe {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-heading {
+      font-size: 42px;
+      text-align: center;
+    }
+    #circle,
+    #square {
+      display: none;
+    }
+  }
+  footer {
+    padding: 10px 10px;
+  }
+  .wrapper {
+    flex-direction: column;
+    &-content {
+      padding: 10px;
+      margin: 0;
+    }
+    &-desc {
+      display: none;
+    }
+    .navlinks {
+      & ul,
+      li {
+        display: none;
+      }
+    }
+    &-icon {
+      color: #ffffff;
+      & i {
+        padding: 10px;
+        margin-bottom: 10px;
+        &:hover {
+          color: $btnColor;
+        }
+      }
+    }
+    &-info {
+      font-size: 10px;
+      gap: 0;
+      &-two {
+        margin: 0;
+      }
+    }
+  }
+}
+@include responsive_1024 {
+  .header-container {
+    padding: 35px 100px 30px 100px;
+    // gap: 0 375px;
+  }
+  .btn-getdemo {
+    font-size: 12px;
+    margin: 0;
+    padding: 10px 30px;
+  }
+  .btn-getstarted {
+    width: 90%;
+    text-align: center;
+    margin-left: 1rem;
+  }
+  .hero {
+    &-image {
+      grid-template-columns: repeat(2, 350px);
+      padding: 0;
+      margin-left: 100px;
+      & img {
+        width: 300px;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-left: 155px;
+        }
+      }
+    }
+    &-heading {
+      padding: 0px 50px;
+      margin: 30px 0;
+      font-size: 52px;
+    }
+  }
+  .campaign {
+    padding: 50px 10px;
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin-right: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .sales {
+    padding: 50px 10px;
+    &-img {
+      margin: 0;
+      margin-top: 30px;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .support {
+    padding: 50px 10px;
+    &-img {
+      margin: 0;
+      margin-top: 30px;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .works {
+    padding: 10px 10px;
+    &-img {
+      margin: 0;
+      margin: 30px 0;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+    &-list {
+      grid-template-columns: repeat(2, 175px);
+      grid-template-rows: repeat(2, 60px);
+    }
+  }
+  .superpowers {
+    padding: 50px 10px;
+    &-img {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    &-img img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+  }
+  .clients {
+    padding: 50px 10px;
+    &-pic {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    &-pic img {
+      width: 300px;
+    }
+    &-content {
+      margin: 0;
+    }
+    &-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    &-desc {
+      text-align: center;
+    }
+    &-rate {
+      left: -75px;
+      padding: 30px 10px;
+    }
+    #left,
+    #right {
+      // display: none;
+      margin-left: 65px;
+    }
+  }
+  .subscribe {
+    flex-direction: column;
+    padding: 50px 10px;
+    &-heading {
+      font-size: 42px;
+      text-align: center;
+    }
+    #circle,
+    #square {
+      display: none;
+    }
+  }
+  footer {
+    padding: 10px 10px;
+  }
+  .wrapper {
+    flex-direction: column;
+    &-content {
+      padding: 10px;
+      margin: 0;
+    }
+    &-desc {
+      display: none;
+    }
+    .navlinks {
+      & ul,
+      li {
+        display: none;
+      }
+    }
+    &-icon {
+      color: #ffffff;
+      & i {
+        padding: 10px;
+        margin-bottom: 10px;
+        &:hover {
+          color: $btnColor;
+        }
+      }
+    }
+    &-info {
+      font-size: 10px;
+      gap: 0;
+      &-two {
+        margin: 0;
+      }
+    }
+  }
+}
+@include responsive_1200 {
+  .btn-getdemo {
+    font-size: 12px;
+    margin: 0;
+    padding: 10px 30px;
+  }
+  .btn-getstarted {
+    // width: 90%;
+    text-align: center;
+    margin-left: 1rem;
+  }
+  // .hero {
+  //   &-image {
+  //     grid-template-columns: repeat(2, 350px);
+  //     padding: 0;
+  //     margin-left: 100px;
+  //     & img {
+  //       width: 300px;
+  //       margin-bottom: 10px;
+  //       &:last-child {
+  //         margin-left: 155px;
+  //       }
+  //     }
+  //   }
+  //   &-heading {
+  //     padding: 0px 50px;
+  //     margin: 30px 0;
+  //     font-size: 52px;
+  //   }
+  // }
+  // .campaign {
+  //   padding: 50px 10px;
+  //   &-img img {
+  //     width: 400px;
+  //   }
+  //   &-content {
+  //     margin-right: 0;
+  //   }
+  //   &-heading {
+  //     font-size: 50px;
+  //     text-align: center;
+  //   }
+  //   &-desc {
+  //     text-align: center;
+  //   }
+  // }
+  // .sales {
+  //   padding: 50px 10px;
+  //   &-img {
+  //     margin: 0;
+  //     margin-top: 30px;
+  //   }
+  //   &-img img {
+  //     width: 300px;
+  //   }
+  //   &-content {
+  //     margin: 0;
+  //   }
+  //   &-heading {
+  //     font-size: 30px;
+  //     text-align: center;
+  //   }
+  //   &-desc {
+  //     text-align: center;
+  //   }
+  // }
+  // .support {
+  //   padding: 50px 10px;
+  //   &-img {
+  //     margin: 0;
+  //     margin-top: 30px;
+  //   }
+  //   &-img img {
+  //     width: 300px;
+  //   }
+  //   &-content {
+  //     margin: 0;
+  //   }
+  //   &-heading {
+  //     font-size: 30px;
+  //     text-align: center;
+  //   }
+  //   &-desc {
+  //     text-align: center;
+  //   }
+  // }
+  // .works {
+  //   padding: 10px 10px;
+  //   &-img {
+  //     margin: 0;
+  //     margin: 30px 0;
+  //   }
+  //   &-img img {
+  //     width: 300px;
+  //   }
+  //   &-content {
+  //     margin: 0;
+  //   }
+  //   &-heading {
+  //     font-size: 30px;
+  //     text-align: center;
+  //   }
+  //   &-desc {
+  //     text-align: center;
+  //   }
+  //   &-list {
+  //     grid-template-columns: repeat(2, 175px);
+  //     grid-template-rows: repeat(2, 60px);
+  //   }
+  // }
+  // .superpowers {
+  //   padding: 50px 10px;
+  //   &-img {
+  //     margin: 0;
+  //     padding: 0;
+  //     margin-bottom: 30px;
+  //   }
+  //   &-img img {
+  //     width: 300px;
+  //   }
+  //   &-content {
+  //     margin: 0;
+  //   }
+  //   &-heading {
+  //     font-size: 30px;
+  //     text-align: center;
+  //   }
+  //   &-desc {
+  //     text-align: center;
+  //   }
+  // }
+  // .clients {
+  //   padding: 50px 10px;
+  //   &-pic {
+  //     margin: 0;
+  //     padding: 0;
+  //     margin-bottom: 30px;
+  //   }
+  //   &-pic img {
+  //     width: 300px;
+  //   }
+  //   &-content {
+  //     margin: 0;
+  //   }
+  //   &-heading {
+  //     font-size: 30px;
+  //     text-align: center;
+  //   }
+  //   &-desc {
+  //     text-align: center;
+  //   }
+  //   &-rate {
+  //     left: -75px;
+  //     padding: 30px 10px;
+  //   }
+  //   #left,
+  //   #right {
+  //     // display: none;
+  //     margin-left: 65px;
+  //   }
+  // }
+  // .subscribe {
+  //   flex-direction: column;
+  //   padding: 50px 10px;
+  //   &-heading {
+  //     font-size: 42px;
+  //     text-align: center;
+  //   }
+  //   #circle,
+  //   #square {
+  //     display: none;
+  //   }
+  // }
+  footer {
+    padding: 50px 100px 30px 100px;
+  }
+  .wrapper {
+    &-icon {
+      display: none;
+    }
+    // flex-direction: column;
+    // &-content {
+    //   padding: 10px;
+    //   margin: 0;
+    // }
+    // &-desc {
+    //   display: none;
+    // }
+    // .navlinks {
+    //   & ul,
+    //   li {
+    //     display: none;
+    //   }
+    // }
+    // &-icon {
+    //   color: #ffffff;
+    //   & i {
+    //     padding: 10px;
+    //     margin-bottom: 10px;
+    //     &:hover {
+    //       color: $btnColor;
+    //     }
+    //   }
+    // }
+    // &-info {
+    //   font-size: 10px;
+    //   gap: 0;
+    //   &-two {
+    //     margin: 0;
+    //   }
+    // }
+  }
+}

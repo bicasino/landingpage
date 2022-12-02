@@ -1,0 +1,56 @@
+.clients {
+  @include flexrow();
+  padding: 100px 135px 100px 135px;
+  &-content {
+    font-family: $primaryFont;
+    margin-left: 100px;
+    & i {
+      padding: 15px;
+      cursor: pointer;
+    }
+    & #right {
+      color: $btnColor;
+    }
+  }
+  &-heading {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  &-desc {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  &-pic {
+    position: relative;
+    z-index: 1;
+  }
+  &-shape {
+    content: "";
+    position: relative;
+    background: $btnColor;
+    border-radius: 18px 0px 0px 18px;
+    z-index: 50;
+    height: 200px;
+    width: 200px;
+  }
+  &-rate {
+    position: relative;
+    background-color: $textColor;
+    padding: 30px 26px 30px 55px;
+    box-shadow: 0px 14px 24px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    z-index: 2;
+    left: -135px;
+    &-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & h4 {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+  }
+}

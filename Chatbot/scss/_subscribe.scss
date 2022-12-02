@@ -1,0 +1,49 @@
+.subscribe {
+  background-color: $btnColor;
+  @include hero();
+  padding: 100px 135px 100px 135px;
+  color: $textColor;
+  gap: 30px 0;
+  & p {
+    color: $textColor;
+  }
+  &-heading {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: $primaryFont;
+    margin: 0;
+  }
+  &-desc {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $primaryFont;
+    text-align: center;
+  }
+  &-input {
+    display: flex;
+    padding: 5px 5px;
+    background-color: $textColor;
+    border-radius: 50px 50px 50px 50px;
+  }
+  &-input input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: $descColor;
+    padding: 0 80px;
+  }
+  & #circle {
+    position: absolute;
+    left: 150px;
+  }
+  & #square {
+    position: absolute;
+    right: 200px;
+  }
+}
+.sub-input {
+  background-color: $primaryColor_1;
+  &:hover {
+    background-color: $btnColor;
+  }
+}

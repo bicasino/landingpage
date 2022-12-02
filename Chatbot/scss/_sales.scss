@@ -1,0 +1,28 @@
+.sales {
+  background-color: $primaryColor_1;
+  @include flexrow();
+  color: $textColor;
+  padding: 96px 135px 96px 135px;
+  &-content {
+    font-family: $primaryFont;
+    margin-left: 100px;
+  }
+  &-heading {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  &-desc {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  &-img {
+    margin-right: 100px;
+  }
+}
+.btn-getstarted {
+  &:hover {
+    opacity: 0.8;
+  }
+}

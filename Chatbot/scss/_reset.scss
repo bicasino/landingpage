@@ -1,0 +1,63 @@
+$primaryColor_1: #102437;
+$textColor: #ffffff;
+$primaryFont: "Outfit", sans-serif;
+$btnColor: rgba(144, 133, 209, 1);
+$inputColor: #283a4b;
+$descColor: #7e8091;
+
+@mixin header-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: $primaryFont;
+}
+@mixin button {
+  padding: 11px 23px;
+  background-color: $btnColor;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px 50px 50px 50px;
+  cursor: pointer;
+}
+
+@mixin hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin flexrow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin button {
+  padding: 11px 23px;
+  background-color: $btnColor;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px 50px 50px 50px;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $primaryFont;
+  overflow-x: hidden;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+p {
+  color: $descColor;
+}

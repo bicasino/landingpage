@@ -1,0 +1,73 @@
+@mixin hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin button {
+  padding: 11px 23px;
+  background-color: $btnColor;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px 50px 50px 50px;
+  cursor: pointer;
+}
+.hero {
+  background-color: $primaryColor_1;
+  color: $textColor;
+  @include hero();
+  &-heading {
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 292px 26px 292px;
+    font-family: $primaryFont;
+  }
+  &-desc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 100px;
+    font-family: $primaryFont;
+    &-list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0 10px;
+      cursor: pointer;
+      & :hover {
+        color: $textColor;
+      }
+    }
+    & p {
+      margin-bottom: 0;
+    }
+  }
+  &-input {
+    display: flex;
+    padding: 5px 5px;
+    background-color: $inputColor;
+    border-radius: 50px 50px 50px 50px;
+    margin: 50px 0;
+  }
+  &-input input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: $textColor;
+    padding: 0 80px;
+  }
+  &-image {
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    justify-content: center;
+    padding: 0 135px 80px 135px;
+    // align-items: center;
+  }
+}
+.btn-input {
+  @include button();
+  &:hover {
+    opacity: 0.8;
+  }
+}

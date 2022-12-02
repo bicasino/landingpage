@@ -1,0 +1,21 @@
+.support {
+  @include flexrow();
+  padding: 90px 135px 90px 135px;
+  &-img {
+    margin-left: 50px;
+  }
+  &-content {
+    font-family: $primaryFont;
+    margin-right: 50px;
+  }
+  &-heading {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  &-desc {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+}

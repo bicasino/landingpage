@@ -1,0 +1,35 @@
+.header-container {
+  background-color: $primaryColor_1;
+  height: 50px;
+  color: $textColor;
+  padding: 50px 200px 50px 175px;
+  @include header-links();
+}
+.nav-items {
+  @include header-links();
+  margin-bottom: 0;
+  gap: 0 50px;
+  font-weight: 400;
+  font-size: 16px;
+  & li {
+    opacity: 0.8;
+  }
+  & li:hover {
+    border-bottom: 2px solid $btnColor;
+    opacity: 1;
+    color: $textColor;
+  }
+  cursor: pointer;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-getdemo {
+  margin-right: 30px;
+  @include button();
+  &:hover {
+    opacity: 0.8;
+  }
+}

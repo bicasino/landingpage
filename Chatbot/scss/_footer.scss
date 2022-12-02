@@ -1,0 +1,53 @@
+footer {
+  background-color: $primaryColor_1;
+  padding: 90px 135px 30px 135px;
+}
+.wrapper {
+  @include flexrow();
+  border-bottom: 0.01px solid $textColor;
+  &-content {
+    margin-bottom: 50px;
+  }
+  &-desc {
+    font-family: $primaryFont;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: #c3c8cd;
+  }
+  &-info {
+    font-family: $primaryFont;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10px 0 10px;
+    cursor: pointer;
+    &-two {
+        margin-left: -800px;
+    }
+    & li:hover {
+        color: $textColor;
+    }
+  }
+}
+.navlinks {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  align-items: center;
+  font-family: $primaryFont;
+  gap: 0 20px;
+  & li {
+    color: #c3c8cd;
+    margin: 12px 0;
+  }
+  & li:hover{
+    color: $btnColor;
+    cursor: pointer;
+  }
+}
+ul {
+  color: $textColor;
+}
+li {
+  color: $descColor;
+}
