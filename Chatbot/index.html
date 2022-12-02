@@ -25,20 +25,31 @@
     <header>
       <div class="header-container">
         <div class="logo"><img src="./lib/Logo.png" alt="" /></div>
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="#home">Home</a>
+          <a href="#hitworks">How it Works</a>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#">Blog</a>
+        </div>
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
         <!-- <div class="logo">chitchat.ai</div> -->
         <div class="nav-links">
           <ul class="nav-items">
-            <li>Home</li>
-            <li>How it Works</li>
-            <li>Features</li>
-            <li>Pricing</li>
-            <li>Blog</li>
+            <a href="#home"><li>Home</li></a>
+            <a href="#hitworks"><li>How it Works</li></a>
+            <a href="#features"><li>Features</li></a>
+            <a href="#pricing"><li>Pricing</li></a>
+            <a href="#"><li>Blog</li></a>
           </ul>
         </div>
         <div class="button btn-getdemo">Get Demo</div>
       </div>
     </header>
-    <main class="hero">
+    <main class="hero" id="home">
       <h1 class="hero-heading">
         A Personalized, Smart, AI-Powered Chat Assistant
       </h1>
@@ -66,7 +77,7 @@
         <img src="./lib/Card_3.png" alt="Card 3" />
       </div>
     </main>
-    <main class="campaign">
+    <main class="campaign" id="hitworks">
       <div class="campaign-img">
         <img src="./lib/Group_46.png" alt="" />
       </div>
@@ -150,7 +161,7 @@
         <img src="./lib/Image_content.png" alt="" />
       </div>
     </main>
-    <main class="superpowers">
+    <main class="superpowers" id="features">
       <div class="superpowers-img">
         <img src="./lib/Cards.png" alt="" />
       </div>
@@ -194,7 +205,7 @@
         </div>
       </div>
     </main>
-    <main class="subscribe">
+    <main class="subscribe" id="pricing">
       <img id="circle" src="./lib/Group_66.png" alt="" />
       <h1 class="subscribe-heading">Subscribe our newsletter</h1>
       <p class="subscribe-desc">
@@ -281,5 +292,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="./JavaScript/index.js"></script>
   </body>
 </html>

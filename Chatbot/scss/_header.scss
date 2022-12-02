@@ -19,6 +19,9 @@
     opacity: 1;
     color: $textColor;
   }
+  & a:hover {
+    text-decoration: none;
+  }
   cursor: pointer;
 }
 .logo {
@@ -32,4 +35,10 @@
   &:hover {
     opacity: 0.8;
   }
+}
+.sidebar{
+  display: none;
+}
+#main {
+  display: none;
 }

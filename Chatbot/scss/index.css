@@ -54,6 +54,9 @@ p {
   opacity: 1;
   color: #ffffff;
 }
+.nav-items a:hover {
+  text-decoration: none;
+}
 
 .logo {
   font-size: 24px;
@@ -72,6 +75,14 @@ p {
 }
 .btn-getdemo:hover {
   opacity: 0.8;
+}
+
+.sidebar {
+  display: none;
+}
+
+#main {
+  display: none;
 }
 
 .hero {
@@ -471,6 +482,9 @@ li {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 374px) {
+  body {
+    overflow-x: hidden;
+  }
   .header-container {
     padding: 35px 133px 30px 144px;
     gap: 0 100px;
@@ -478,11 +492,14 @@ li {
   .nav-links {
     display: none;
   }
+  .sidebar {
+    display: block;
+  }
+  #main {
+    display: block;
+  }
   .btn-getdemo {
-    font-size: 10px;
-    margin: 0;
-    margin-right: 5px;
-    padding: 5px 30px;
+    display: none;
   }
   .btn-getstarted {
     width: 90%;
@@ -706,11 +723,14 @@ li {
   .nav-links {
     display: none;
   }
+  .sidebar {
+    display: block;
+  }
+  #main {
+    display: block;
+  }
   .btn-getdemo {
-    font-size: 10px;
-    margin: 0;
-    margin-right: 5px;
-    padding: 5px 30px;
+    display: none;
   }
   .btn-getstarted {
     width: 90%;
@@ -726,7 +746,7 @@ li {
     margin-bottom: 10px;
   }
   .hero-heading {
-    padding: 0;
+    padding: 0 10px;
     margin: 30px 0;
     font-size: 38px;
   }
@@ -934,10 +954,14 @@ li {
   .nav-links {
     display: none;
   }
+  .sidebar {
+    display: block;
+  }
+  #main {
+    display: block;
+  }
   .btn-getdemo {
-    font-size: 10px;
-    margin: 0;
-    padding: 5px 30px;
+    display: none;
   }
   .btn-getstarted {
     width: 90%;
@@ -1161,10 +1185,14 @@ li {
   .nav-links {
     display: none;
   }
+  .sidebar {
+    display: block;
+  }
+  #main {
+    display: block;
+  }
   .btn-getdemo {
-    font-size: 12px;
-    margin: 0;
-    padding: 5px 30px;
+    display: none;
   }
   .btn-getstarted {
     width: 90%;
@@ -1793,7 +1821,7 @@ li {
     margin: 0;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
   .btn-getdemo {
     font-size: 12px;
     margin: 0;
@@ -1803,10 +1831,98 @@ li {
     text-align: center;
     margin-left: 1rem;
   }
+  .hero-image {
+    grid-template-columns: repeat(3, 350px);
+  }
+  .hero-image img {
+    width: 350px;
+    margin-bottom: 10px;
+  }
+  .campaign {
+    gap: 0 100px;
+  }
+  .works {
+    gap: 0 100px;
+  }
+  .clients-rate {
+    left: -75px;
+    padding: 30px 29px;
+  }
+  .subscribe #left {
+    left: 130px;
+  }
+  .subscribe #square {
+    right: 125px;
+  }
   footer {
     padding: 50px 100px 30px 100px;
   }
   .wrapper-icon {
     display: none;
   }
+  .wrapper-info-two {
+    margin-left: -500px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .btn-getstarted {
+    text-align: center;
+    margin-left: 1rem;
+  }
+  .subscribe #left {
+    left: 130px;
+  }
+  .subscribe #square {
+    right: 125px;
+  }
+  .wrapper-icon {
+    display: none;
+  }
+  .wrapper-info-two {
+    margin-left: -700px;
+  }
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #102437;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
 }/*# sourceMappingURL=index.css.map */
