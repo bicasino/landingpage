@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IT VNPOST</title>
+    <link rel="Shortcut icon" href="/image/logo.png" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+      integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css"">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css" /> -->
+    <link rel="stylesheet" href="/scss/index.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="overlay-common show" id="overlay"></div>
+    <header>
+      <div class="container">
+        <div class="header-logo">
+          <a href="/index.html" class="logo">
+            <img src="/image/logo1.png" alt="" />
+          </a>
+        </div>
+        <div id="aside" class="header-navlinks">
+          <ul class="header-menu">
+            <li class="header-dropdown">
+              <a href="">Giới thiệu</a>
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-list">
+                <a href="/web/gioi-thieu-chung.html" class="dropdown-item"
+                  >Giới thiệu chung</a
+                >
+                <a href="/web/sumenhtamnhin.html" class="dropdown-item"
+                  >Sứ mệnh - Tầm nhìn</a
+                >
+                <a href="/web/doi-tac-cong-nghe.html" class="dropdown-item"
+                  >Đối tác công nghệ</a
+                >
+              </div>
+            </li>
+            <li class="header-dropdown">
+              <a href="">Giải pháp - Dự án</a>
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-list">
+                <a href="/web/giai-phap.html" class="dropdown-item"
+                  >Giải pháp</a
+                >
+                <a href="/web/du-an.html" class="dropdown-item">Dự án</a>
+              </div>
+            </li>
+            <li>
+              <a href="/web/van-hoa-noi-bo.html">Văn hoá nội bộ</a>
+            </li>
+            <li>
+              <a href="/web/tintuc.html">Tin tức</a>
+            </li>
+            <li>
+              <a href="/web/co-hoi-nghe-nghiep.html">Cơ hội nghề nghiệp</a>
+            </li>
+            <li class="header-dropdown">
+              <a href="">Liên hệ hỏi đáp</a>
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-list">
+                <a
+                  href="https://itsm.vnpost.vn"
+                  target="_blank"
+                  class="dropdown-item"
+                  >IT Helpdesk</a
+                >
+                <a
+                  href="https://mail.vnpost.vn"
+                  target="_blank"
+                  class="dropdown-item"
+                  >Email</a
+                >
+                <a
+                  href="https://eoffice.vnpost.vn/qlvbdh/main?lang=vi"
+                  target="_blank"
+                  class="dropdown-item"
+                  >E-Office</a
+                >
+                <a href="#" class="dropdown-item">Lịch trực</a>
+                <a href="#" class="dropdown-item">DASHBOARD</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="btn-toggle" class="nav-toggle">
+          <i class="fa-solid fa-bars-staggered fa-xl"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="search">
+        <div class="container">
+          <div class="search-phone">
+            <i class="fa-solid fa-phone"></i>
+            <i> 0243.768.9363 </i>
+          </div>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search..." />
+            <span class="search-btn">
+              <a href="#"> Tìm kiếm</a>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div class="container">
+          <ul
+            aria-label="Đường dẫn liên kết (breadcrumb)"
+            class="breadcrumb breadcrumb-horizontal"
+          >
+            <li class="first breadcrumb-truncate">
+              <a href="/index.html">VNPOST-IT</a><span class="divider">/</span>
+            </li>
+            <li class="current-parent breadcrumb-truncate">
+              <a href="/web/tintuc.html">TIN TỨC</a
+              ><span class="divider">/</span>
+            </li>
+          </ul>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="menuleft">
+                <ul>
+                  <li>
+                    <a href=""> GIỚI THIỆU</a>
+                    <ul>
+                      <li>
+                        <a href="/web/gioi-thieu-chung.html" class="current">
+                          Giới thiệu chung</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/web/sumenhtamnhin.html" class="current">
+                          Sứ mệnh, tầm nhìn</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/web/co-cau-to-chuc.html" class="current">
+                          Cơ cấu tổ chức</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/web/doi-tac-cong-nghe.html" class="current">
+                          Đối tác công nghệ</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href=""> GIẢI PHÁP - DỰ ÁN</a>
+                    <ul>
+                      <li>
+                        <a href="/web/giai-phap.html" class="current">
+                          Giải pháp</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/web/du-an.html" class="current"> Dự án</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/web/van-hoa-noi-bo.html"> VĂN HOÁ NỘI BỘ</a>
+                  </li>
+                  <li>
+                    <a href="/web/tintuc.html"> TIN TỨC</a>
+                  </li>
+                  <li>
+                    <a href="/web/co-hoi-nghe-nghiep.html">
+                      CƠ HỘI NGHỀ NGHIỆP</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="current"> LIÊN HỆ HỎI ĐÁP</a>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://itsm.vnpost.vn"
+                          target="_blank"
+                          class="current"
+                        >
+                          IT Helpdesk</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://mail.vnpost.vn"
+                          target="_blank"
+                          class="current"
+                        >
+                          Email</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://eoffice.vnpost.vn/qlvbdh/main?lang=vi"
+                          target="_blank"
+                          class="current"
+                        >
+                          E-Office</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="current"> Lịch trực</a>
+                      </li>
+                      <li>
+                        <a href="" class="current"> DASHBOARD</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="portlet-body">
+                <div class="details">
+                  <div class="container">
+                    <div class="title-news">
+                      <h1 style="font-weight: bold">
+                        Tăng cường công tác lãnh đạo, chỉ đạo, quyết tâm phấn
+                        đấu hoàn thành cao nhất mục tiêu kế hoạch năm 2022
+                      </h1>
+                      <div class="row-cont">
+                        <div class="col-sm-6 col-md-6 col-xs-6">
+                          <p class="date_post">
+                            <i class="fa-regular fa-clock"></i> 14-10-2022
+                          </p>
+                        </div>
+
+                        <div id="share-social">
+                          <a href="#">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="asset-full-content show-asset-title">
+                      <div class="asset-content">
+                        <div class="journal-content-article article">
+                          <p
+                            style="
+                              margin-bottom: 10px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              Đánh giá kết quả 9 tháng đầu năm, đồng chí Nguyễn
+                              Hải Thanh, Bí thư Đảng ủy, Chủ tịch Hội đồng thành
+                              viên Tổng công ty nhận định, năm 2022 là năm rất
+                              khó khăn, áp lực đối với nền kinh tế xã hội nói
+                              chung, hoạt động sản xuất kinh doanh của các doanh
+                              nghiệp nói riêng, trong đó có hoạt động sản xuất
+                              kinh doanh của Tổng công ty.</span
+                            >
+                          </p>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                            "
+                          >
+                            &nbsp;
+                          </p>
+                          <table
+                            align="center"
+                            border="0"
+                            cellpadding="1"
+                            cellspacing="1"
+                           
+                          >
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <img
+                                    alt=""
+                                    src="/tintuc_img/cong-tac-lanh-dao.jpeg"
+                                    style="width: 100%; height: auto"
+                                  />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center; font-size: 12px">
+                                  <em>Quang cảnh hội nghị </em>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              Ngày 13/10/2022 tại Hà Nội, Đảng bộ Tổng công ty
+                              Bưu điện Việt Nam tổ chức Hội nghị Ban Chấp hành
+                              lần thứ 11, nhiệm kỳ 2020-2025 nhằm sơ kết công
+                              tác Đảng 9 tháng đầu năm và triển khai nhiệm vụ
+                              trọng tâm các tháng cuối năm 2022.</span
+                            >
+                          </p>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              9 tháng đầu năm 2022, Đảng ủy Tổng công ty đã chủ
+                              động xây dựng, kịp thời ban hành các Nghị quyết,
+                              chương trình công tác trọng tâm để làm định hướng
+                              xuyên suốt cho hoạt động của Ban Chấp hành trong
+                              năm; tổ chức 09 kỳ họp thường kỳ của Ban Thường
+                              vụ, 02 kỳ họp thường kỳ của Ban Chấp hành và nhiều
+                              kỳ họp đột xuất để giải quyết các yêu cầu, nhiệm
+                              vụ công tác. Thực hiện rà soát, điều chỉnh phân
+                              công nhiệm vụ Ban Chấp hành Đảng bộ Tổng công ty.
+                              Xây dựng, trình Đảng ủy Khối phê duyệt Đề án thành
+                              lập Đảng bộ công ty mẹ - Tổng công ty Bưu điện
+                              Việt Nam; xây dựng Chương trình hành động thực
+                              hiện Nghị quyết 02-NQ/TW ngày 12/6/2021 của Bộ
+                              Chính trị về đổi mới tổ chức và hoạt động của Công
+                              đoàn Việt Nam trong tình hình mới; bổ sung nội
+                              dung Kết luận 21-KL/TW vào Chương trình hành động
+                              thực hiện Nghị quyết Đại hội toàn quốc lần thứ
+                              XIII của Đảng; xây dựng kế hoạch hành động thực
+                              hiện Nghị quyết Trung ương 4, 5 (khóa XIII); chỉ
+                              đạo đẩy mạnh công tác đấu tranh, bảo vệ nền tảng
+                              tư tưởng của Đảng, ngăn chặn các biểu hiện “tự
+                              diễn biến”, “tự chuyển hóa”, đẩy mạnh hoạt động
+                              Ban chỉ đạo 35 của Đảng ủy Tổng công ty; ban hành
+                              trên 60 loại văn bản cụ thể hóa nội dung chỉ thị,
+                              nghị quyết của Trung ương và Đảng ủy Khối Doanh
+                              nghiệp trung ương để lãnh đạo, chỉ đạo các mặt
+                              hoạt động chung trong công tác xây dựng đảng và
+                              nhiệm vụ chính trị của Đảng bộ Tổng công ty.</span
+                            >
+                          </p>
+                          <table
+                            align="center"
+                            border="0"
+                            cellpadding="1"
+                            cellspacing="1"
+                           
+                          >
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <img
+                                    alt=""
+                                    src="/tintuc_img/cong-tac-lanh-dao1.jpeg"
+                                    style="width: 100%; height: auto"
+                                  />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center; font-size: 12px">
+                                  <em
+                                    >Bí thư Đảng ủy, Chủ tịch HĐTV Nguyễn Hải
+                                    Thanh phát biểu tại hội nghị
+                                  </em>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              Trong lãnh đạo, chỉ đạo thực hiện nhiệm vụ chính
+                              trị, mặc dù đã sớm nhận định được tình hình và chủ
+                              động triển khai nhiều giải pháp quyết liệt để vừa
+                              thúc đẩy hiệu quả sản xuất kinh doanh, vừa tiết
+                              giảm chi phí, đảm bảo lợi nhuận để đảm bảo tiền
+                              lương người lao động, tuy nhiên, kết quả trong 09
+                              tháng đầu năm chưa đạt như kỳ vọng. Hoạt động sản
+                              xuất kinh doanh của Tổng công ty phát sinh các
+                              khoản chi phí rất lớn, đặc biệt là các khoản chi
+                              cho công tác phòng chống dịch bệnh, các khoản chi
+                              do giá cả nhiên liệu và đầu vào sản xuất tăng
+                              cao.</span
+                            >
+                          </p>
+                          <table
+                            align="center"
+                            border="0"
+                            cellpadding="1"
+                            cellspacing="1"
+                           
+                          >
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <img
+                                    alt=""
+                                    src="/tintuc_img/cong-tac-lanh-dao2.jpeg"
+                                    style="width: 100%; height: auto"
+                                  />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center; font-size: 12px">
+                                  <em
+                                    >Phó Bí thư Đảng ủy, Tổng giám đốc Chu Quang
+                                    Hào tin tưởng Bưu điện Việt Nam sẽ vượt qua
+                                    khó khăn, hoàn thành tốt nhiệm vụ chính trị
+                                    năm 2022
+                                  </em>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              Với mục tiêu phấn đấu hoàn thành tốt nhất chỉ tiêu
+                              kế hoạch năm 2022, đảm bảo hiệu quả hoạt động của
+                              doanh nghiệp nhà nước, đảm bảo thu nhập, tiền
+                              lương người lao động, Đảng ủy Tổng công ty đã
+                              thống nhất ban hành Chỉ thị về
+                              <em>
+                                “Tăng cường công tác lãnh đạo, chỉ đạo, quyết
+                                tâm phấn đấu hoàn thành tốt nhất mục tiêu kế
+                                hoạch sản xuất kinh doanh năm 2022 của Tổng công
+                                ty”.</em
+                              >
+                              Theo đó, Đảng ủy Tổng công ty yêu cầu các cấp ủy
+                              trực thuộc, chuyên môn, công đoàn, đoàn thanh niên
+                              Tổng công ty tập trung triển khai hiệu quả một số
+                              nhiệm vụ trọng tâm, cụ thể:</span
+                            >
+                          </p>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              <strong>1.</strong> Nâng cao hiệu quả, hiệu lực
+                              công tác chỉ đạo, điều hành; gắn trách nhiệm của
+                              từng cá nhân lãnh đạo các cấp đối với kết quả thực
+                              hiện nhiệm vụ theo lĩnh vực được phân công phụ
+                              trách. Ưu tiên nguồn lực hỗ trợ thúc đẩy phát
+                              triển hoạt động kinh doanh dịch vụ, tạo sự bứt phá
+                              trong 3 tháng cuối năm, quyết tâm phấn đấu hoàn
+                              thành mục tiêu kế hoạch sản xuất kinh doanh năm
+                              2022 của Tổng công ty.</span
+                            >
+                          </p>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              <strong>2.</strong> Tập trung chỉ đạo, điều hành,
+                              triển khai quyết liệt các giải pháp thúc đẩy kinh
+                              doanh các dịch vụ hiệu quả, dịch vụ có doanh thu,
+                              doanh thu tính lương cao; tăng cường hỗ trợ hoạt
+                              động các đơn vị trọng điểm, đơn vị chiếm tỷ trọng
+                              lớn trong tổng doanh thu toàn Tổng công ty.</span
+                            >
+                          </p>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              <strong>3.</strong> Thường xuyên thực hiện rà
+                              soát, cải tiến, đổi mới tổ chức sản xuất, đổi mới
+                              sản phẩm dịch vụ, quy trình nghiệp vụ, việc bố
+                              trí, sắp xếp lao động, nâng cao hiệu suất vận
+                              chuyển… để tiết giảm chi phí, nâng cao năng suất
+                              lao động, nâng cao hiệu quả hoạt động. Chú trọng
+                              cải thiện, nâng cao chất lượng dịch vụ, rút ngắn
+                              thời gian toàn trình.</span
+                            >
+                          </p>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              <strong>4.</strong> Khẩn trương bổ sung, kiện
+                              toàn, đảm bảo đủ lực lượng bán hàng chuyên trách;
+                              đẩy mạnh công tác bán hàng, năng suất bán hàng của
+                              toàn bộ các kênh bán (lực lượng bán hàng chuyên
+                              trách, hệ thống bưu cục, Bưu điện Văn hóa xã) tại
+                              các địa bàn, thị trường tiềm năng.</span
+                            >
+                          </p>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              <strong>5.</strong>Tiếp tục nâng cấp, hoàn thiện,
+                              phát triển các hệ thống, ứng dụng công nghệ thông
+                              tin phục vụ công tác quản trị, điều hành, tổ chức
+                              sản xuất, kinh doanh của Tổng công ty. Nghiên cứu
+                              triển khai ứng dụng nền tảng làm việc số tại khối
+                              Cơ quan Tổng công ty. Giải quyết nhanh, triệt để
+                              các kiến nghị, yêu cầu nóng về công nghệ thông tin
+                              của mạng lưới, đặc biệt là trong lĩnh vực kinh
+                              doanh dịch vụ bưu chính chuyển phát.</span
+                            >
+                          </p>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              <strong>6.</strong> Quán triệt, thực hiện triệt để
+                              các giải pháp tiết giảm, đảm bảo hiệu quả chi phí;
+                              tăng cường các hoạt động giám sát, công tác kiểm
+                              soát doanh thu, chi phí, việc đảm bảo an toàn dòng
+                              tiền, an toàn quỹ két tại các đơn vị trên mạng
+                              lưới. Tiếp tục triển khai nghiêm túc Chỉ thị
+                              01/CT-BĐVN ngày 18/6/2022, văn bản
+                              3833/BĐVN-TCKH-VP ngày 31/8/2022 của Tổng công ty
+                              về tăng cường tiết kiệm chi phí, nâng cao hiệu quả
+                              điều hành sản xuất kinh doanh trong các tháng cuối
+                              năm.</span
+                            >
+                          </p>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              <strong>7.</strong> Xây dựng các chương trình thi
+                              đua nước rút, tăng tốc về đích có tính đột phá,
+                              tạo động lực; tổ chức triển khai bài bản, hiệu quả
+                              để thúc đẩy tăng trưởng hoạt động kinh doanh dịch
+                              vụ các tháng cuối năm, đóng góp tích cực vào kết
+                              quả hoạt động chung trong năm 2022 của Tổng công
+                              ty.</span
+                            >
+                          </p>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              <strong>8.</strong> Làm tốt công tác động viên,
+                              khích lệ, cổ vũ tinh thần, sự chia sẻ, động lực
+                              phấn đấu trong mỗi cán bộ công nhân viên, người
+                              lao động trước những khó khăn chung của Tổng công
+                              ty. Duy trì nền nếp ý thức tổ chức kỷ luật, việc
+                              triển khai văn hóa doanh nghiệp. Quan tâm chăm lo
+                              đời sống tinh thần, ổn định thu nhập người lao
+                              động.</span
+                            >
+                          </p>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              Với sự lãnh đạo, chỉ đạo sát sao của Đảng ủy, Hội
+                              đồng thành viên, Ban Tổng giám đốc, sự quyết tâm
+                              của toàn hệ thống chính trị, đặc biệt là tinh thần
+                              “LÀM GƯƠNG – KỶ CƯƠNG – TRỌNG TÂM – BỨT PHÁ” của
+                              người đứng đầu các cấp trong triển khai các nhiệm
+                              vụ được giao; sự nỗ lực của toàn thể cán bộ, đảng
+                              viên, người lao động trên toàn mạng lưới, Bưu điện
+                              Việt Nam sẽ vượt qua khó khăn, hoàn thành tốt
+                              nhiệm vụ chính trị năm 2022.</span
+                            >
+                          </p>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                            "
+                          >
+                            &nbsp;
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-xs-12 row-left">
+            <div class="company">
+              <div class="company-info">
+                <img src="/image/footerlogo.png" alt="" />
+              </div>
+              <div class="company-name">
+                <strong
+                  >Trung tâm Công nghệ thông tin - Tổng công ty Bưu Điện Việt
+                  Nam</strong
+                >
+              </div>
+              <div class="company-li">
+                <span class="fa-solid fa-location-dot"></span>
+                Địa chỉ: Số 05 đường Phạm Hùng - Mỹ Đình 2 - Nam Từ Liêm - Hà
+                Nội - Việt Nam
+              </div>
+              <div class="company-li">
+                <span class="fa-solid fa-phone"></span>
+
+                Điện thoại: 0243.768.9363
+              </div>
+              <div class="company-li">
+                <span class="fa-solid fa-envelope"></span>
+
+                Email: cntt@vnpost.vn
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12 visible">
+            <div class="box-footer">
+              <div class="title">GIỚI THIỆU</div>
+              <ul class="menus">
+                <li>
+                  <a href="/web/gioi-thieu-chung.html">Giới thiệu chung</a>
+                </li>
+                <li>
+                  <a href="/web/co-cau-to-chuc.html">Cơ cấu tổ chức</a>
+                </li>
+                <li>
+                  <a href="/web/sumenhtamnhin.html">Tầm nhìn, Sứ mệnh</a>
+                </li>
+                <li>
+                  <a href="/web/doi-tac-cong-nghe.html">Đối tác, Khách hàng</a>
+                </li>
+                <li>
+                  <a href="#">Nguồn lực</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12 visible">
+            <div class="box-footer">
+              <div class="title">TIN TỨC</div>
+              <ul class="menus">
+                <li>
+                  <a href="/web/tintuc.html">Tin VNPOST</a>
+                </li>
+                <li>
+                  <a href="/web/tintuc.html">Tin IT - VNPOST</a>
+                </li>
+                <li>
+                  <a href="#">Phản hồi của khách hàng</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-2 col-xs-12 visible">
+            <div class="box-footer">
+              <div class="title">SẢN PHẨM - DỊCH VỤ</div>
+              <ul class="menus">
+                <li>
+                  <a href="/web/giai-phap.html">Giải pháp Doanh nghiệp</a>
+                </li>
+                <li>
+                  <a href="/web/giai-phap.html">Giải pháp Giáo dục</a>
+                </li>
+                <li>
+                  <a href="/web/giai-phap.html">An toàn bảo mật</a>
+                </li>
+                <li>
+                  <a href="/web/giai-phap.html">Trung tâm dữ liệu</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-2 col-xs-12">
+            <div class="box-footer">
+              <div class="title">Kết nối</div>
+              <ul class="social">
+                <li>
+                  <a
+                    href="https://www.facebook.com/VNPostIT/"
+                    class="btn fb"
+                    target="_blank"
+                    ><span class="icon fa fa-facebook"></span
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCEVc8VAItMsg9Hg6J-H3xmQ"
+                    class="btn yt"
+                    target="_blank"
+                    ><span class="icon fa fa-youtube-play"></span
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/vietnam_post"
+                    class="btn tt"
+                    target="_blank"
+                    ><span class="icon fa fa-twitter"></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          Thành viên của
+          <span class="img">
+            <img src="/image/logo_white.png" alt="" style="height: 30px" />
+          </span>
+        </div>
+      </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <span class="fa-solid fa-angle-up"></span>
+    </button>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://kit.fontawesome.com/3c44c51b1b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/index.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="/owlcarousel/owl.carousel.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

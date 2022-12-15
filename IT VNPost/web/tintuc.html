@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IT VNPOST</title>
+    <link rel="Shortcut icon" href="/image/logo.png" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+      integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css"">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css" /> -->
+    <link rel="stylesheet" href="/scss/index.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="overlay-common show" id="overlay"></div>
+    <header>
+      <div class="container">
+        <div class="header-logo">
+          <a href="/index.html" class="logo">
+            <img src="/image/logo1.png" alt="" />
+          </a>
+        </div>
+        <div id="aside" class="header-navlinks">
+          <ul class="header-menu">
+            <li class="header-dropdown">
+              <a href="">Giới thiệu</a>
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-list">
+                <a href="/web/gioi-thieu-chung.html" class="dropdown-item"
+                  >Giới thiệu chung</a
+                >
+                <a href="/web/sumenhtamnhin.html" class="dropdown-item"
+                  >Sứ mệnh - Tầm nhìn</a
+                >
+                <a href="/web/doi-tac-cong-nghe.html" class="dropdown-item"
+                  >Đối tác công nghệ</a
+                >
+              </div>
+            </li>
+            <li class="header-dropdown">
+              <a href="">Giải pháp - Dự án</a>
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-list">
+                <a href="/web/giai-phap.html" class="dropdown-item"
+                  >Giải pháp</a
+                >
+                <a href="/web/du-an.html" class="dropdown-item">Dự án</a>
+              </div>
+            </li>
+            <li>
+              <a href="/web/van-hoa-noi-bo.html">Văn hoá nội bộ</a>
+            </li>
+            <li>
+              <a href="/web/tintuc.html">Tin tức</a>
+            </li>
+            <li>
+              <a href="/web/co-hoi-nghe-nghiep.html">Cơ hội nghề nghiệp</a>
+            </li>
+            <li class="header-dropdown">
+              <a href="">Liên hệ hỏi đáp</a>
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-list">
+                <a
+                  href="https://itsm.vnpost.vn"
+                  target="_blank"
+                  class="dropdown-item"
+                  >IT Helpdesk</a
+                >
+                <a
+                  href="https://mail.vnpost.vn"
+                  target="_blank"
+                  class="dropdown-item"
+                  >Email</a
+                >
+                <a
+                  href="https://eoffice.vnpost.vn/qlvbdh/main?lang=vi"
+                  target="_blank"
+                  class="dropdown-item"
+                  >E-Office</a
+                >
+                <a href="#" class="dropdown-item">Lịch trực</a>
+                <a href="#" class="dropdown-item">DASHBOARD</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="btn-toggle" class="nav-toggle">
+          <i class="fa-solid fa-bars-staggered fa-xl"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="search">
+        <div class="container">
+          <div class="search-phone">
+            <i class="fa-solid fa-phone"></i>
+            <i> 0243.768.9363 </i>
+          </div>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Nhập từ khoá tìm kiếm..." />
+            <span class="search-btn">
+              <a href="#"> Tìm kiếm</a>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div class="container">
+          <ul
+            aria-label="Đường dẫn liên kết (breadcrumb)"
+            class="breadcrumb breadcrumb-horizontal"
+          >
+            <li class="first breadcrumb-truncate">
+              <a href="/index.html">VNPOST-IT</a><span class="divider">/</span>
+            </li>
+            <li class="current-parent breadcrumb-truncate">
+              <a href="/web/tintuc.html">TIN TỨC</a>
+            </li>
+          </ul>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="menuleft">
+                <ul>
+                  <li>
+                    <a href=""> GIỚI THIỆU</a>
+                    <ul>
+                      <li>
+                        <a href="/web/gioi-thieu-chung.html" class="current">
+                          Giới thiệu chung</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/web/sumenhtamnhin.html" class="current">
+                          Sứ mệnh, tầm nhìn</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/web/co-cau-to-chuc.html" class="current">
+                          Cơ cấu tổ chức</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/web/doi-tac-cong-nghe.html" class="current">
+                          Đối tác công nghệ</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href=""> GIẢI PHÁP - DỰ ÁN</a>
+                    <ul>
+                      <li>
+                        <a href="/web/giai-phap.html" class="current">
+                          Giải pháp</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/web/du-an.html" class="current"> Dự án</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/web/van-hoa-noi-bo.html"> VĂN HOÁ NỘI BỘ</a>
+                  </li>
+                  <li>
+                    <a href="/web/tintuc.html"> TIN TỨC</a>
+                  </li>
+                  <li>
+                    <a href="/web/co-hoi-nghe-nghiep.html"> CƠ HỘI NGHỀ NGHIỆP</a>
+                  </li>
+                  <li>
+                    <a href="" class="current"> LIÊN HỆ HỎI ĐÁP</a>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://itsm.vnpost.vn"
+                          target="_blank"
+                          class="current"
+                        >
+                          IT Helpdesk</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://mail.vnpost.vn"
+                          target="_blank"
+                          class="current"
+                        >
+                          Email</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://eoffice.vnpost.vn/qlvbdh/main?lang=vi"
+                          target="_blank"
+                          class="current"
+                        >
+                          E-Office</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="current"> Lịch trực</a>
+                      </li>
+                      <li>
+                        <a href="" class="current"> DASHBOARD</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="portlet-body">
+                <div class="container">
+                  <div class="box-news-xx">
+                    <a class="image-tt" href="/chi-tiet-tin/vnpost-5-nam.html">
+                      <span class="rollx"></span>
+                      <img
+                        class="img-news-xx slickHoverPlus"
+                        src="/tintuc_img/vnpost_5_nam.png"
+                      />
+                    </a>
+                    <h2 class="h2-title-xx">
+                      <a href="/chi-tiet-tin/vnpost-5-nam.html"
+                        >Vietnam Post 5 năm liền nằm trong top 10 nhãn hiệu nổi
+                        tiếng</a
+                      >
+                    </h2>
+                    <div class="hot-news-tol">
+                      <p class="date_post">
+                        <i class="fa-regular fa-clock"></i>12-12-2022
+                      </p>
+                    </div>
+                    <div class="hot-news-sapo-x">
+                      Ngày 10/12, Hội Sở hữu trí tuệ Việt Nam đã tổ chức Lễ trao
+                      chứng nhận Nhãn hiệu nổi tiếng - Nhãn hiệu cạnh tranh Việt
+                      Nam năm 2022. Tổng công ty Bưu điện Việt Nam (Vietnam
+                      Post) được vinh danh Top 10 nhãn hiệu nổi tiếng Việt Nam
+                      năm 2022. Đây là năm thứ 5 liên tiếp Vietnam Post nằm
+                      trong top 10 nhãn hiệu nổi tiếng của Việt Nam.
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  
+                  <div class="box-news-xx">
+                    <a class="image-tt" href="/chi-tiet-tin/asean-post-28.html">
+                      <span class="rollx"></span>
+                      <img
+                        class="img-news-xx slickHoverPlus"
+                        src="/tintuc_img/asean_post.jpeg"
+                      />
+                    </a>
+                    <h2 class="h2-title-xx">
+                      <a href="/chi-tiet-tin/asean-post-28.html"
+                        >ASEAN POST 28: Thông qua nhiều vấn đề bưu chính quan
+                        trọng trong khu vực</a
+                      >
+                    </h2>
+                    <div class="hot-news-tol">
+                      <p class="date_post">
+                        <i class="fa-regular fa-clock"></i>09-12-2022
+                      </p>
+                    </div>
+                    <div class="hot-news-sapo-x">
+                      Hội nghị Asean Post 28 đã diễn ra thành công và chính thức
+                      khép lại vào ngày 9/12 tại Bình Định sau 3 ngày làm việc
+                      tích cực và hiệu quả. Vietnam Post được đánh giá cao về sự
+                      nỗ lực trong công tác tổ chức, đặc biệt là những ý kiến
+                      đóng góp tích cực tại Hội nghị nhằm thúc đẩy sự phát triển
+                      mạnh mẽ của bưu chính khu vực Đông Nam Á.
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="box-news-xx">
+                    <a
+                      class="image-tt"
+                      href="/chi-tiet-tin/e-learning-lan-ii.html"
+                    >
+                      <span class="rollx"></span>
+                      <img
+                        class="img-news-xx slickHoverPlus"
+                        src="/tintuc_img/e-learning.jpeg"
+                      />
+                    </a>
+                    <h2 class="h2-title-xx">
+                      <a href="/chi-tiet-tin/e-learning-lan-ii.html"
+                        >Hệ thống đào tạo trực tuyến E-learning</a
+                      >
+                    </h2>
+                    <div class="hot-news-tol">
+                      <p class="date_post">
+                        <i class="fa-regular fa-clock"></i>08-12-2022
+                      </p>
+                    </div>
+                    <div class="hot-news-sapo-x">
+                      “Hệ thống đào tạo trực tuyến E-learning” của Trung tâm
+                      CNTT Tổng công ty Bưu điện Việt Nam được vinh danh tại Lễ
+                      trao giải thưởng đổi mới sáng tạo doanh nghiệp lần thứ II
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="box-news-xx">
+                    <a
+                      class="image-tt"
+                      href="/chi-tiet-tin/khai-mac-asean-post.html"
+                    >
+                      <span class="rollx"></span>
+                      <img
+                        class="img-news-xx slickHoverPlus"
+                        src="/tintuc_img/khai_mac_aseanpost.jpeg"
+                      />
+                    </a>
+                    <h2 class="h2-title-xx">
+                      <a href="/chi-tiet-tin/khai-mac-asean-post.html"
+                        >Khai mạc Hội nghị Bưu chính các nước ASEAN (ASEANPOST)
+                        năm 2022</a
+                      >
+                    </h2>
+                    <div class="hot-news-tol">
+                      <p class="date_post">
+                        <i class="fa-regular fa-clock"></i>08-12-2022
+                      </p>
+                    </div>
+                    <div class="hot-news-sapo-x">
+                      Ngày 07/12/2022 tại Bình Định, Hội nghị Bưu chính các nước
+                      ASEAN (ASEANPOST) năm 2022 đã chính thức khai mạc với sự
+                      tham dự của Bưu chính 10 nước Đông Nam Á gồm: Brunei
+                      Darusslam, Campuchia, Indonesia, Lào, Malaysia, Myanmar,
+                      Philippines, Singapore, Thái Lan và Việt Nam.
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="box-news-xx">
+                    <a class="image-tt" href="/chi-tiet-tin/vnpost-logistics.html">
+                      <span class="rollx"></span>
+                      <img
+                        class="img-news-xx slickHoverPlus"
+                        src="/tintuc_img/vnpost_logistics.jpeg"
+                      />
+                    </a>
+                    <h2 class="h2-title-xx">
+                      <a href="/chi-tiet-tin/vnpost-logistics.html"
+                        >Vietnam Post Logistics góp giải pháp “xanh hóa” hoạt
+                        động logistics</a
+                      >
+                    </h2>
+                    <div class="hot-news-tol">
+                      <p class="date_post">
+                        <i class="fa-regular fa-clock"></i>03-12-2022
+                      </p>
+                    </div>
+                    <div class="hot-news-sapo-x">
+                      Diễn đàn Logistics Việt Nam 2022 với chủ đề “Logistics
+                      xanh” được tổ chức tại TP. Hải Phòng đã khép lại thành
+                      công với sự quan tâm của nhiều doanh nghiệp trong và ngoài
+                      nước.
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="box-news-xx">
+                    <a
+                      class="image-tt"
+                      href="/chi-tiet-tin/buu-dien-viet-nam-vi-the-he-tre-lan-ii.html"
+                    >
+                      <span class="rollx"></span>
+                      <img
+                        class="img-news-xx slickHoverPlus"
+                        src="/tintuc_img/vnpost_chay_bo.jpeg"
+                      />
+                    </a>
+                    <h2 class="h2-title-xx">
+                      <a
+                        href="/chi-tiet-tin/buu-dien-viet-nam-vi-the-he-tre-lan-ii.html"
+                        >Nam thanh nữ tú Trung tâm CNTT tham gia giải chạy “Bưu
+                        điện Việt Nam - Vì thế hệ trẻ” lần thứ II</a
+                      >
+                    </h2>
+                    <div class="hot-news-tol">
+                      <p class="date_post">
+                        <i class="fa-regular fa-clock"></i>03-12-2022
+                      </p>
+                    </div>
+                    <div class="hot-news-sapo-x">
+                      Sáng 21/8, tại khu vực Hồ Hoàn Kiếm, Tổng công ty Bưu điện
+                      Việt Nam đã tổ chức giải chạy “Bưu điện Việt Nam - Vì thế
+                      hệ trẻ” lần thứ II. Các vận động viên của Trung tâm CNTT
+                      đã tham gia với tinh thần giao lưu, rèn luyện thể dục thể
+                      thao, nâng cao sức khỏe. Kết quả của TTCNTT: vận động viên
+                      Lê Thế Hiếu đạt Giải Khuyến khích cự ly 3.4km.
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="box-news-xx">
+                    <a
+                      class="image-tt"
+                      href="/chi-tiet-tin/vnpost-nam-trong-top-10.html"
+                    >
+                      <span class="rollx"></span>
+                      <img
+                        class="img-news-xx slickHoverPlus"
+                        src="/tintuc_img/vnpost_top10.jpeg"
+                      />
+                    </a>
+                    <h2 class="h2-title-xx">
+                      <a href="/chi-tiet-tin/vnpost-nam-trong-top-10.html"
+                        >Vietnam Post nằm trong top 10 của nhóm ngành Công nghệ
+                        Thương hiệu Mạnh Việt Nam năm 2022</a
+                      >
+                    </h2>
+                    <div class="hot-news-tol">
+                      <p class="date_post">
+                        <i class="fa-regular fa-clock"></i>03-12-2022
+                      </p>
+                    </div>
+                    <div class="hot-news-sapo-x">
+                      Ngày 12/10, tại Lễ Công bố và Vinh danh Thương hiệu Mạnh
+                      Việt Nam 2022, Tổng công ty Bưu điện Việt Nam (Vietnam
+                      Post) đã vinh dự lọt vào TOP 10 của nhóm ngành Công nghệ
+                      Thương hiệu mạnh Việt Nam năm 2022. Cũng tại chương trình,
+                      Tạp chí Kinh tế Việt Nam VnEconomy – Vietnam Economic
+                      Times đã tổ chức ra mắt Tòa soạn số VnEconomy và Phát hành
+                      số các ấn phẩm báo chí trên nền tảng TMĐT phát hành báo
+                      chí trung ương.
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="box-news-xx">
+                    <a
+                      class="image-tt"
+                      href="/chi-tiet-tin/vnpost-la-thuong-hieu-quoc-gia.html"
+                    >
+                      <span class="rollx"></span>
+                      <img
+                        class="img-news-xx slickHoverPlus"
+                        src="/tintuc_img/vnpost_thuong_hieu_quoc_gia.jpeg"
+                      />
+                    </a>
+                    <h2 class="h2-title-xx">
+                      <a
+                        href="/chi-tiet-tin/vnpost-la-thuong-hieu-quoc-gia.html"
+                        >Vietnam Post là Thương hiệu quốc gia Việt Nam 2022</a
+                      >
+                    </h2>
+                    <div class="hot-news-tol">
+                      <p class="date_post">
+                        <i class="fa-regular fa-clock"></i>03-12-2022
+                      </p>
+                    </div>
+                    <div class="hot-news-sapo-x">
+                      Tối 2/11 dịch vụ bưu chính chuyển phát của Tổng công ty
+                      Bưu điện Việt Nam đã được vinh danh thương hiệu quốc gia
+                      năm 2022 tại Lễ Công bố sản phẩm đạt Thương hiệu quốc gia
+                      Việt Nam lần thứ 8.
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="box-news-xx">
+                    <a
+                      class="image-tt"
+                      href="/chi-tiet-tin/dai-hoi-chi-bo-trung-tam-cntt.html"
+                    >
+                      <span class="rollx"></span>
+                      <img
+                        class="img-news-xx slickHoverPlus"
+                        src="/tintuc_img/sinhnhat_vnpostIT.jpeg"
+                      />
+                    </a>
+                    <h2 class="h2-title-xx">
+                      <a href="/chi-tiet-tin/dai-hoi-chi-bo-trung-tam-cntt.html"
+                        >ĐẠI HỘI CHI BỘ TRUNG TÂM CNTT LẦN THỨ III NHIỆM KỲ
+                        2022-2025</a
+                      >
+                    </h2>
+                    <div class="hot-news-tol">
+                      <p class="date_post">
+                        <i class="fa-regular fa-clock"></i>30-11-2022
+                      </p>
+                    </div>
+                    <div class="hot-news-sapo-x">
+                      Ngày 03/11 vừa qua, Chi bộ Trung tâm CNTT đã tổ chức thành
+                      công Đại hội Chi bộ lần thứ III nhiệm kỳ 2022 - 2025. Đại
+                      hội đã bầu chọn ra được những gương mặt ưu tú, tiêu biểu
+                      tiếp tục dẫn dắt Chi bộ, đồng thời xác định mục tiêu,
+                      phương hướng trong nhiệm kỳ mới. Tham dự đại hội, Chi bộ
+                      vinh dự đón tiếp đồng chí Chu Quang Hào - Phó Bí thư Đảng
+                      ủy, Tổng Giám đốc TCT Bưu điện Việt Nam.
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="box-news-xx">
+                    <a class="image-tt" href="/chi-tiet-tin/chuyen-doi-so.html">
+                      <span class="rollx"></span>
+                      <img
+                        class="img-news-xx slickHoverPlus"
+                        src="/tintuc_img/vnpost_chuyen_doi_so.jpeg"
+                      />
+                    </a>
+                    <h2 class="h2-title-xx">
+                      <a href="/chi-tiet-tin/chuyen-doi-so.html"
+                        >Lãnh đạo Vietnam Post tiếp tục tham gia Ủy ban quốc gia
+                        về chuyển đổi số</a
+                      >
+                    </h2>
+                    <div class="hot-news-tol">
+                      <p class="date_post">
+                        <i class="fa-regular fa-clock"></i>27-09-2021
+                      </p>
+                    </div>
+                    <div class="hot-news-sapo-x">
+                      Thủ tướng Chính phủ Phạm Minh Chính vừa ký ban hành Quyết
+                      định số 1619/QĐ-TTg ngày 24-9 về việc kiện toàn và đổi tên
+                      Ủy ban quốc gia về Chính phủ điện tử. Quyết định có hiệu
+                      lực kể từ ngày ký và thay thế Quyết định số 701/QĐ-TTg
+                      ngày 26-5-2020 của Thủ tướng Chính phủ kiện toàn Ủy ban
+                      quốc gia về chính phủ điện tử.
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <br />
+
+                  <style>
+                    .bootstrap-vnp .navigation-vnp ul {
+                      float: right;
+                      margin-right: 20px;
+                      margin-bottom: 20px;
+                    }
+                    .bootstrap-vnp .navigation-vnp ul li {
+                      float: left;
+                      font-size: 12px;
+                      margin-left: 2px;
+                    }
+                    .bootstrap-vnp .navigation-vnp ul li:hover {
+                      border-radius: 0px;
+                      -moz-border-radius: 0px;
+                      -webkit-border-radius: 0px;
+                    }
+                    .bootstrap-vnp .navigation-vnp ul li:hover a {
+                      color: #ffffff;
+                      background-color: orange;
+                      border: 1px solid orange;
+                    }
+                    .bootstrap-vnp .navigation-vnp ul li.active a {
+                      color: #fff;
+                      border: 1px solid orange;
+                      background: orange;
+                    }
+                    .bootstrap-vnp .navigation-vnp ul li a {
+                      color: #000;
+                      padding: 5px 10px;
+                      display: block;
+                      line-height: 18px;
+                      background: #ffffff;
+                      border: 1px solid #a3aaaf;
+                      text-align: center;
+                    }
+                  </style>
+
+                  <div
+                    class="taglib-page-iterator"
+                    id="_101_INSTANCE_XIksQWkVgvgz_ocerSearchContainerPageIterator"
+                  >
+                    <div class="bootstrap-vnp">
+                      <div class="navigation-vnp">
+                        <ul>
+                          <li class="disabled first" style="display: none">
+                            <a href="javascript:;" target="_self"> &lt;&lt; </a>
+                          </li>
+
+                          <li class="active">
+                            <a href="#"> 1 </a>
+                          </li>
+
+                          <li>
+                            <a href="#"> 2 </a>
+                          </li>
+
+                          <li>
+                            <a href="#"> 3 </a>
+                          </li>
+
+                          <li>
+                            <a href="#"> 4 </a>
+                          </li>
+
+                          <li>
+                            <a href="#"> 5 </a>
+                          </li>
+
+                          <li>
+                            <a href="#"> 6 </a>
+                          </li>
+
+                          <li>
+                            <a href="#"> 7 </a>
+                          </li>
+
+                          <li>
+                            <a href="#"> 8 </a>
+                          </li>
+
+                          <li>
+                            <a href="#"> 9 </a>
+                          </li>
+
+                          <li class="last">
+                            <a href="#" target="_self"> &gt;&gt; </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-xs-12 row-left">
+            <div class="company">
+              <div class="company-info">
+                <img src="/image/footerlogo.png" alt="" />
+              </div>
+              <div class="company-name">
+                <strong
+                  >Trung tâm Công nghệ thông tin - Tổng công ty Bưu Điện Việt
+                  Nam</strong
+                >
+              </div>
+              <div class="company-li">
+                <span class="fa-solid fa-location-dot"></span>
+                Địa chỉ: Số 05 đường Phạm Hùng - Mỹ Đình 2 - Nam Từ Liêm - Hà
+                Nội - Việt Nam
+              </div>
+              <div class="company-li">
+                <span class="fa-solid fa-phone"></span>
+
+                Điện thoại: 0243.768.9363
+              </div>
+              <div class="company-li">
+                <span class="fa-solid fa-envelope"></span>
+
+                Email: cntt@vnpost.vn
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12 visible">
+            <div class="box-footer">
+              <div class="title">GIỚI THIỆU</div>
+              <ul class="menus">
+                <li>
+                  <a href="/web/gioi-thieu-chung.html">Giới thiệu chung</a>
+                </li>
+                <li>
+                  <a href="/web/co-cau-to-chuc.html">Cơ cấu tổ chức</a>
+                </li>
+                <li>
+                  <a href="/web/sumenhtamnhin.html">Tầm nhìn, Sứ mệnh</a>
+                </li>
+                <li>
+                  <a href="/web/doi-tac-cong-nghe.html">Đối tác, Khách hàng</a>
+                </li>
+                <li>
+                  <a href="#">Nguồn lực</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12 visible">
+            <div class="box-footer">
+              <div class="title">TIN TỨC</div>
+              <ul class="menus">
+                <li>
+                  <a href="https://vietnampost.vn/tin-tuc">Tin VNPOST</a>
+                </li>
+                <li>
+                  <a href="https://vietnampost.vn/tin-tuc">Tin IT - VNPOST</a>
+                </li>
+                <li>
+                  <a href="#">Phản hồi của khách hàng</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-2 col-xs-12 visible">
+            <div class="box-footer">
+              <div class="title">SẢN PHẨM - DỊCH VỤ</div>
+              <ul class="menus">
+                <li>
+                  <a href="/web/giai-phap.html">Giải pháp Doanh nghiệp</a>
+                </li>
+                <li>
+                  <a href="/web/giai-phap.html">Giải pháp Giáo dục</a>
+                </li>
+                <li>
+                  <a href="https://vietnampost.vn/doanh-nghiep"
+                    >An toàn bảo mật</a
+                  >
+                </li>
+                <li>
+                  <a href="https://vietnampost.vn/doanh-nghiep"
+                    >Trung tâm dữ liệu</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-2 col-xs-12">
+            <div class="box-footer">
+              <div class="title">Kết nối</div>
+              <ul class="social">
+                <li>
+                  <a
+                    href="https://www.facebook.com/VNPostIT/"
+                    class="btn fb"
+                    target="_blank"
+                    ><span class="icon fa fa-facebook"></span
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCEVc8VAItMsg9Hg6J-H3xmQ"
+                    class="btn yt"
+                    target="_blank"
+                    ><span class="icon fa fa-youtube-play"></span
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/vietnam_post"
+                    class="btn tt"
+                    target="_blank"
+                    ><span class="icon fa fa-twitter"></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          Thành viên của
+          <span class="img">
+            <img src="/image/logo_white.png" alt="" style="height: 30px" />
+          </span>
+        </div>
+      </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <span class="fa-solid fa-angle-up"></span>
+    </button>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://kit.fontawesome.com/3c44c51b1b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/index.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="/owlcarousel/owl.carousel.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

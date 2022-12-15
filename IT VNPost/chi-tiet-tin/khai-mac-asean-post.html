@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IT VNPOST</title>
+    <link rel="Shortcut icon" href="/image/logo.png" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+      integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css"">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css" /> -->
+    <link rel="stylesheet" href="/scss/index.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="overlay-common show" id="overlay"></div>
+    <header>
+      <div class="container">
+        <div class="header-logo">
+          <a href="/index.html" class="logo">
+            <img src="/image/logo1.png" alt="" />
+          </a>
+        </div>
+        <div id="aside" class="header-navlinks">
+          <ul class="header-menu">
+            <li class="header-dropdown">
+              <a href="">Giới thiệu</a>
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-list">
+                <a href="/web/gioi-thieu-chung.html" class="dropdown-item"
+                  >Giới thiệu chung</a
+                >
+                <a href="/web/sumenhtamnhin.html" class="dropdown-item"
+                  >Sứ mệnh - Tầm nhìn</a
+                >
+                <a href="/web/doi-tac-cong-nghe.html" class="dropdown-item"
+                  >Đối tác công nghệ</a
+                >
+              </div>
+            </li>
+            <li class="header-dropdown">
+              <a href="">Giải pháp - Dự án</a>
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-list">
+                <a href="/web/giai-phap.html" class="dropdown-item"
+                  >Giải pháp</a
+                >
+                <a href="/web/du-an.html" class="dropdown-item">Dự án</a>
+              </div>
+            </li>
+            <li>
+              <a href="/web/van-hoa-noi-bo.html">Văn hoá nội bộ</a>
+            </li>
+            <li>
+              <a href="/web/tintuc.html">Tin tức</a>
+            </li>
+            <li>
+              <a href="/web/co-hoi-nghe-nghiep.html">Cơ hội nghề nghiệp</a>
+            </li>
+            <li class="header-dropdown">
+              <a href="">Liên hệ hỏi đáp</a>
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-list">
+                <a
+                  href="https://itsm.vnpost.vn"
+                  target="_blank"
+                  class="dropdown-item"
+                  >IT Helpdesk</a
+                >
+                <a
+                  href="https://mail.vnpost.vn"
+                  target="_blank"
+                  class="dropdown-item"
+                  >Email</a
+                >
+                <a
+                  href="https://eoffice.vnpost.vn/qlvbdh/main?lang=vi"
+                  target="_blank"
+                  class="dropdown-item"
+                  >E-Office</a
+                >
+                <a href="#" class="dropdown-item">Lịch trực</a>
+                <a href="#" class="dropdown-item">DASHBOARD</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="btn-toggle" class="nav-toggle">
+          <i class="fa-solid fa-bars-staggered fa-xl"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="search">
+        <div class="container">
+          <div class="search-phone">
+            <i class="fa-solid fa-phone"></i>
+            <i> 0243.768.9363 </i>
+          </div>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search..." />
+            <span class="search-btn">
+              <a href="#"> Tìm kiếm</a>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div class="container">
+          <ul
+            aria-label="Đường dẫn liên kết (breadcrumb)"
+            class="breadcrumb breadcrumb-horizontal"
+          >
+            <li class="first breadcrumb-truncate">
+              <a href="/index.html">VNPOST-IT</a><span class="divider">/</span>
+            </li>
+            <li class="current-parent breadcrumb-truncate">
+              <a href="/web/tintuc.html">TIN TỨC</a
+              ><span class="divider">/</span>
+            </li>
+          </ul>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="menuleft">
+                <ul>
+                  <li>
+                    <a href=""> GIỚI THIỆU</a>
+                    <ul>
+                      <li>
+                        <a href="/web/gioi-thieu-chung.html" class="current">
+                          Giới thiệu chung</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/web/sumenhtamnhin.html" class="current">
+                          Sứ mệnh, tầm nhìn</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/web/co-cau-to-chuc.html" class="current">
+                          Cơ cấu tổ chức</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/web/doi-tac-cong-nghe.html" class="current">
+                          Đối tác công nghệ</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href=""> GIẢI PHÁP - DỰ ÁN</a>
+                    <ul>
+                      <li>
+                        <a href="/web/giai-phap.html" class="current">
+                          Giải pháp</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/web/du-an.html" class="current"> Dự án</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/web/van-hoa-noi-bo.html"> VĂN HOÁ NỘI BỘ</a>
+                  </li>
+                  <li>
+                    <a href="/web/tintuc.html"> TIN TỨC</a>
+                  </li>
+                  <li>
+                    <a href="/web/co-hoi-nghe-nghiep.html">
+                      CƠ HỘI NGHỀ NGHIỆP</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="current"> LIÊN HỆ HỎI ĐÁP</a>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://itsm.vnpost.vn"
+                          target="_blank"
+                          class="current"
+                        >
+                          IT Helpdesk</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://mail.vnpost.vn"
+                          target="_blank"
+                          class="current"
+                        >
+                          Email</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://eoffice.vnpost.vn/qlvbdh/main?lang=vi"
+                          target="_blank"
+                          class="current"
+                        >
+                          E-Office</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="current"> Lịch trực</a>
+                      </li>
+                      <li>
+                        <a href="" class="current"> DASHBOARD</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="portlet-body">
+                <div class="details">
+                  <div class="container">
+                    <div class="title-news">
+                      <h1 style="font-weight: bold">
+                        Khai mạc Hội nghị Bưu chính các nước ASEAN (ASEANPOST)
+                        năm 2022
+                      </h1>
+                      <div class="row-cont">
+                        <div class="col-sm-6 col-md-6 col-xs-6">
+                          <p class="date_post">
+                            <i class="fa-regular fa-clock"></i> 08-12-2022
+                          </p>
+                        </div>
+
+                        <div id="share-social">
+                          <a href="#">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="asset-full-content show-asset-title">
+                      <div class="asset-content">
+                        <div class="journal-content-article article">
+                          <p
+                            style="
+                              margin-bottom: 10px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              Ngày 07/12/2022 tại Bình Định, Hội nghị Bưu chính
+                              các nước ASEAN (ASEANPOST) năm 2022 đã chính thức
+                              khai mạc với sự tham dự của Bưu chính 10 nước Đông
+                              Nam Á gồm: Brunei Darusslam, Campuchia, Indonesia,
+                              Lào, Malaysia, Myanmar, Philippines, Singapore,
+                              Thái Lan và Việt Nam.</span
+                            >
+                          </p>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                            "
+                          >
+                            &nbsp;
+                          </p>
+                          <table
+                            align="center"
+                            border="0"
+                            cellpadding="1"
+                            cellspacing="1"
+                           
+                          >
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <img
+                                    alt=""
+                                    src="/tintuc_img/khai-mac.jpeg"
+                                    style="width: 100%; height: auto"
+                                  />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center; font-size: 12px">
+                                  <em
+                                    >Phó Tổng giám đốc Tổng công ty Bưu điện
+                                    Việt Nam Chu Thị Lan Hương phát biểu tại lễ
+                                    khai mạc
+                                  </em>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              Hội nghị sẽ tập trung thảo luận về việc triển khai
+                              các vấn đề hợp tác đa phương, kế hoạch hành động
+                              được thông qua tại Đại hội Liên minh Bưu chính Thế
+                              giới (UPU) và Liên minh Bưu chính khu vực Châu Á -
+                              Thái Bình Dương (APPU). Đặc biệt, các nhà lãnh đạo
+                              cấp cao của Bưu chính 10 nước Đông Nam Á sẽ dành
+                              nhiều thời gian để trao đổi, thảo luận về xu hướng
+                              bưu chính toàn cầu; những cơ hội và thách thức của
+                              bưu chính trong thời gian tới; giải pháp nâng cao
+                              chất lượng các sản phẩm dịch vụ chuyển phát truyền
+                              thống, chuyển phát nhanh EMS, chuyển phát hàng
+                              thương mại điện tử (APP ePacket, Asean Pack); tem
+                              bưu chính; các dịch vụ giá trị gia tăng… Ngoài ra,
+                              hội nghị cũng sẽ đưa ra những sáng kiến, giải pháp
+                              tối ưu nhất để đảm bảo lợi ích hài hòa của các
+                              nước thành viên trong việc cùng nhau hợp tác và
+                              phát triển bưu chính ASEAN.
+                            </span>
+                          </p>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              Với vai trò chủ nhà, Bưu điện Việt Nam (Vietnam
+                              Post) sẽ tổ chức Hội nghị bàn tròn các Tổng Giám
+                              đốc điều hành của Bưu chính các nước Đông Nam Á để
+                              thảo luận về cơ hội và thách thức đối với ngành
+                              bưu chính trong thời kỳ chuyển đổi số. “Chúng ta
+                              đang đứng trước một thế giới nhiều biến động với
+                              sự cạnh tranh đến từ bên trong và bên ngoài. Tuy
+                              nhiên, sự thay đổi này mang đến cho chúng ta cơ
+                              hội để đa dạng hóa dịch vụ. Tại Hội nghị này,
+                              Vietnam Post và bưu chính các nước sẽ cùng đưa ra
+                              các sáng kiến để ứng phó với các thách thức, biến
+                              thách thức thành cơ hội, phát triển các ý tưởng
+                              mới, các sản phẩm dịch vụ mới để thích ứng với kỷ
+                              nguyên số và được thị trường đón nhận”, ông Nguyễn
+                              Hải Thanh Chủ tịch Hội đồng thành viên Tổng công
+                              ty Bưu điện Việt Nam cho biết.
+                            </span>
+                          </p>
+                          <table
+                            align="center"
+                            border="0"
+                            cellpadding="1"
+                            cellspacing="1"
+                           
+                          >
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <img
+                                    alt=""
+                                    src="/tintuc_img/khai-mac1.jpeg"
+                                    style="width: 100%; height: auto"
+                                  />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center; font-size: 12px">
+                                  <em
+                                    >Chúng ta đang đứng trước một thế giới nhiều
+                                    biến động với sự cạnh tranh đến từ bên trong
+                                    và bên ngoài. Tuy nhiên, sự thay đổi này
+                                    mang đến cho chúng ta cơ hội để đa dạng hóa
+                                    dịch vụ - Chủ tịch HĐTV Tổng công ty Bưu
+                                    điện Việt Nam nhấn mạnh
+                                  </em>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              Ông Azahar Ariff, Chủ tịch Hội nghị ASEAN POST
+                              khẳng định Hội nghị 28 sẽ là một cột mốc quan
+                              trọng trong quá trình phát triển của Bưu chính
+                              ASEAN nhằm tăng cường hợp tác giữa các nhà khai
+                              thác trong khối ASEAN, đồng thời tiếp tục thúc đẩy
+                              mối quan hệ hiện có và chặt chẽ giữa các Bưu chính
+                              ASEAN với các tổ chức bưu chính quốc tế khác như
+                              Liên minh Bưu chính Châu Á Thái Bình Dương APPU và
+                              Liên minh Bưu chính Thế giới UPU.</span
+                            >
+                          </p>
+                          <table
+                            align="center"
+                            border="0"
+                            cellpadding="1"
+                            cellspacing="1"
+                           
+                          >
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <img
+                                    alt=""
+                                    src="/tintuc_img/khai-mac2.jpeg"
+                                    style="width: 100%; height: auto"
+                                  />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center; font-size: 12px">
+                                  <em
+                                    >Ông Azahar Ariff, Chủ tịch Hội nghị ASEAN
+                                    POST phát biểu tại lễ khai mạc
+                                  </em>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              Phát biểu tại Hội nghị, ông Nguyễn Thanh Lâm, Thứ
+                              trưởng Bộ Thông tin và Truyền thông cho biết,
+                              trong giai đoạn 2015-2020, sản lượng thư toàn cầu
+                              bình quân giảm 4,6%, sản lượng bưu kiện thương mại
+                              điện tử tăng 15,2%. Xu hướng này đòi hỏi ngành bưu
+                              chính cần phát triển theo hướng mở rộng hệ sinh
+                              thái, mở rộng không gian hoạt động, thúc đẩy phát
+                              triển kinh tế số và tham gia góp phần thực hiện
+                              các mục tiêu phát triển bền vững nhằm bảo đảm một
+                              xã hội thịnh vượng toàn diện.</span
+                            >
+                          </p>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              Bưu chính cần phát triển hạ tầng mạng lưới, hạ
+                              tầng số và hạ tầng dữ liệu đồng bộ, hiện đại gắn
+                              kết giữa thế giới thực và thế giới số, trở thành
+                              một trong những hạ tầng thiết yếu của quốc gia và
+                              dần trở thành hạ tầng quan trọng của kinh tế số.
+                            </span>
+                          </p>
+                          <table
+                            align="center"
+                            border="0"
+                            cellpadding="1"
+                            cellspacing="1"
+                           
+                          >
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <img
+                                    alt=""
+                                    src="/tintuc_img/khai-mac3.jpeg"
+                                    style="width: 100%; height: auto"
+                                  />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center; font-size: 12px">
+                                  <em
+                                    >Ông Nguyễn Thanh Lâm, Thứ trưởng Bộ thông
+                                    tin và Truyền thông phát biểu tại Hội nghị
+                                  </em>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table
+                            align="center"
+                            border="0"
+                            cellpadding="1"
+                            cellspacing="1"
+                           
+                          >
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <img
+                                    alt=""
+                                    src="/tintuc_img/khai-mac4.jpeg"
+                                    style="width: 100%; height: auto"
+                                  />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center; font-size: 12px">
+                                  <em
+                                    >Đại diện lãnh đạo Bộ Thông tin và Truyền
+                                    thông tặng quà các đại biểu đến từ các nước
+                                  </em>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              “Ngành bưu chính cần tham gia tích cực thúc đẩy
+                              Chính phủ số, là đối tác chính, thậm chí là đối
+                              tác duy nhất của Chính phủ để phục vụ người dân.
+                              Ngành bưu chính tham gia tích cực vào Xã hội số,
+                              cần trở thành ngành dịch vụ để nâng cao chất lượng
+                              cuộc sống người dân, đảm bảo an sinh, trao gửi
+                              niềm tin cho xã hội’, ông Lâm nhấn mạnh.
+                            </span>
+                          </p>
+                          <table
+                            align="center"
+                            border="0"
+                            cellpadding="1"
+                            cellspacing="1"
+                           
+                          >
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <img
+                                    alt=""
+                                    src="/tintuc_img/khai-mac5.jpeg"
+                                    style="width: 100%; height: auto"
+                                  />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center; font-size: 12px">
+                                  <em>Các đại biểu chụp ảnh lưu niệm </em>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                              text-align: justify;
+                            "
+                          >
+                            <span style="font-size: 14px">
+                              Cũng theo Thứ trưởng Bộ Thông tin và Truyền thông
+                              Nguyễn Thanh Lâm, trong bối cảnh này, các nhà khai
+                              thác được chỉ định quốc gia cần chiếm vị trí thống
+                              lĩnh, dẫn dắt và có những chiến lược và tầm nhìn
+                              bưu chính tiệm cận với xu thế. Hợp tác đa phương
+                              và song phương trong Hiệp hội Asean Post là để tạo
+                              ra một liên minh bưu chính Đông Nam Á lớn mạnh,
+                              đưa ra được các sản phẩm và dịch vụ bưu chính mới
+                              trong môi trường kỷ nguyên số. Bưu chính cần đẩy
+                              nhanh hoạt động số hóa các sản phẩm và dịch vụ,
+                              thích nghi và cạnh tranh được với các công ty
+                              chuyên về số hóa trong các lĩnh vực và sản phẩm
+                              khác để tham gia sâu rộng vào hoạt động cung cấp
+                              dịch vụ số cho chính phủ điện tử, thương mại điện
+                              từ và tài chính điện tử.
+                            </span>
+                          </p>
+                          <p
+                            style="
+                              margin-top: 6px;
+                              margin-bottom: 6px;
+                              font-family: Helvetica, Arial, sans-serif;
+                              color: rgb(29, 33, 41);
+                            "
+                          >
+                            &nbsp;
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-xs-12 row-left">
+            <div class="company">
+              <div class="company-info">
+                <img src="/image/footerlogo.png" alt="" />
+              </div>
+              <div class="company-name">
+                <strong
+                  >Trung tâm Công nghệ thông tin - Tổng công ty Bưu Điện Việt
+                  Nam</strong
+                >
+              </div>
+              <div class="company-li">
+                <span class="fa-solid fa-location-dot"></span>
+                Địa chỉ: Số 05 đường Phạm Hùng - Mỹ Đình 2 - Nam Từ Liêm - Hà
+                Nội - Việt Nam
+              </div>
+              <div class="company-li">
+                <span class="fa-solid fa-phone"></span>
+
+                Điện thoại: 0243.768.9363
+              </div>
+              <div class="company-li">
+                <span class="fa-solid fa-envelope"></span>
+
+                Email: cntt@vnpost.vn
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12 visible">
+            <div class="box-footer">
+              <div class="title">GIỚI THIỆU</div>
+              <ul class="menus">
+                <li>
+                  <a href="/web/gioi-thieu-chung.html">Giới thiệu chung</a>
+                </li>
+                <li>
+                  <a href="/web/co-cau-to-chuc.html">Cơ cấu tổ chức</a>
+                </li>
+                <li>
+                  <a href="/web/sumenhtamnhin.html">Tầm nhìn, Sứ mệnh</a>
+                </li>
+                <li>
+                  <a href="/web/doi-tac-cong-nghe.html">Đối tác, Khách hàng</a>
+                </li>
+                <li>
+                  <a href="#">Nguồn lực</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12 visible">
+            <div class="box-footer">
+              <div class="title">TIN TỨC</div>
+              <ul class="menus">
+                <li>
+                  <a href="/web/tintuc.html">Tin VNPOST</a>
+                </li>
+                <li>
+                  <a href="/web/tintuc.html">Tin IT - VNPOST</a>
+                </li>
+                <li>
+                  <a href="#">Phản hồi của khách hàng</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-2 col-xs-12 visible">
+            <div class="box-footer">
+              <div class="title">SẢN PHẨM - DỊCH VỤ</div>
+              <ul class="menus">
+                <li>
+                  <a href="/web/giai-phap.html">Giải pháp Doanh nghiệp</a>
+                </li>
+                <li>
+                  <a href="/web/giai-phap.html">Giải pháp Giáo dục</a>
+                </li>
+                <li>
+                  <a href="/web/giai-phap.html">An toàn bảo mật</a>
+                </li>
+                <li>
+                  <a href="/web/giai-phap.html">Trung tâm dữ liệu</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-2 col-xs-12">
+            <div class="box-footer">
+              <div class="title">Kết nối</div>
+              <ul class="social">
+                <li>
+                  <a
+                    href="https://www.facebook.com/VNPostIT/"
+                    class="btn fb"
+                    target="_blank"
+                    ><span class="icon fa fa-facebook"></span
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCEVc8VAItMsg9Hg6J-H3xmQ"
+                    class="btn yt"
+                    target="_blank"
+                    ><span class="icon fa fa-youtube-play"></span
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/vietnam_post"
+                    class="btn tt"
+                    target="_blank"
+                    ><span class="icon fa fa-twitter"></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          Thành viên của
+          <span class="img">
+            <img src="/image/logo_white.png" alt="" style="height: 30px" />
+          </span>
+        </div>
+      </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <span class="fa-solid fa-angle-up"></span>
+    </button>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://kit.fontawesome.com/3c44c51b1b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/index.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="/owlcarousel/owl.carousel.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

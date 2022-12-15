@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IT VNPOST</title>
+    <link rel="Shortcut icon" href="/image/logo.png" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+      integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css"">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css" /> -->
+    <link rel="stylesheet" href="/scss/index.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="overlay-common show" id="overlay"></div>
+    <header>
+      <div class="container">
+        <div class="header-logo">
+          <a href="/index.html" class="logo">
+            <img src="/image/logo1.png" alt="" />
+          </a>
+        </div>
+        <div id="aside" class="header-navlinks">
+          <ul class="header-menu">
+            <li class="header-dropdown">
+              <a href="">Giới thiệu</a>
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-list">
+                <a href="/web/gioi-thieu-chung.html" class="dropdown-item"
+                  >Giới thiệu chung</a
+                >
+                <a href="/web/sumenhtamnhin.html" class="dropdown-item"
+                  >Sứ mệnh - Tầm nhìn</a
+                >
+                <a href="/web/doi-tac-cong-nghe.html" class="dropdown-item"
+                  >Đối tác công nghệ</a
+                >
+              </div>
+            </li>
+            <li class="header-dropdown">
+              <a href="">Giải pháp - Dự án</a>
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-list">
+                <a href="/web/giai-phap.html" class="dropdown-item"
+                  >Giải pháp</a
+                >
+                <a href="/web/du-an.html" class="dropdown-item">Dự án</a>
+              </div>
+            </li>
+            <li>
+              <a href="/web/van-hoa-noi-bo.html">Văn hoá nội bộ</a>
+            </li>
+            <li>
+              <a href="/web/tintuc.html">Tin tức</a>
+            </li>
+            <li>
+              <a href="/web/co-hoi-nghe-nghiep.html">Cơ hội nghề nghiệp</a>
+            </li>
+            <li class="header-dropdown">
+              <a href="">Liên hệ hỏi đáp</a>
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-list">
+                <a
+                  href="https://itsm.vnpost.vn"
+                  target="_blank"
+                  class="dropdown-item"
+                  >IT Helpdesk</a
+                >
+                <a
+                  href="https://mail.vnpost.vn"
+                  target="_blank"
+                  class="dropdown-item"
+                  >Email</a
+                >
+                <a
+                  href="https://eoffice.vnpost.vn/qlvbdh/main?lang=vi"
+                  target="_blank"
+                  class="dropdown-item"
+                  >E-Office</a
+                >
+                <a href="#" class="dropdown-item">Lịch trực</a>
+                <a href="#" class="dropdown-item">DASHBOARD</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="btn-toggle" class="nav-toggle">
+          <i class="fa-solid fa-bars-staggered fa-xl"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="search">
+        <div class="container">
+          <div class="search-phone">
+            <i class="fa-solid fa-phone"></i>
+            <i> 0243.768.9363 </i>
+          </div>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Nhập từ khoá tìm kiếm..." />
+            <span class="search-btn">
+              <a href="#"> Tìm kiếm</a>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="menuleft">
+                <ul>
+                  <li>
+                    <a href=""> GIỚI THIỆU</a>
+                    <ul>
+                      <li>
+                        <a href="/web/gioi-thieu-chung.html" class="current">
+                          Giới thiệu chung</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/web/sumenhtamnhin.html" class="current">
+                          Sứ mệnh, tầm nhìn</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/web/co-cau-to-chuc.html" class="current">
+                          Cơ cấu tổ chức</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/web/doi-tac-cong-nghe.html" class="current">
+                          Đối tác công nghệ</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href=""> GIẢI PHÁP - DỰ ÁN</a>
+                    <ul>
+                      <li>
+                        <a href="/web/giai-phap.html" class="current">
+                          Giải pháp</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/web/du-an.html" class="current"> Dự án</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/web/van-hoa-noi-bo.html"> VĂN HOÁ NỘI BỘ</a>
+                  </li>
+                  <li>
+                    <a href="/web/tintuc.html"> TIN TỨC</a>
+                  </li>
+                  <li>
+                    <a href="/web/co-hoi-nghe-nghiep.html">
+                      CƠ HỘI NGHỀ NGHIỆP</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="current"> LIÊN HỆ HỎI ĐÁP</a>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://itsm.vnpost.vn"
+                          target="_blank"
+                          class="current"
+                        >
+                          IT Helpdesk</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://mail.vnpost.vn"
+                          target="_blank"
+                          class="current"
+                        >
+                          Email</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://eoffice.vnpost.vn/qlvbdh/main?lang=vi"
+                          target="_blank"
+                          class="current"
+                        >
+                          E-Office</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="current"> Lịch trực</a>
+                      </li>
+                      <li>
+                        <a href="" class="current"> DASHBOARD</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="portlet-body">
+                <ul
+                  aria-label="Đường dẫn liên kết (breadcrumb)"
+                  class="breadcrumb breadcrumb-horizontal"
+                >
+                  <li class="first breadcrumb-truncate">
+                    <a href="/index.html">VNPOST-IT</a
+                    ><span class="divider">/</span>
+                  </li>
+                  <li class="current-parent breadcrumb-truncate">
+                    <a href="">GIẢI PHÁP - DỰ ÁN</a
+                    ><span class="divider">/</span>
+                  </li>
+                  <li class="active last breadcrumb-truncate">
+                    <a href="/web/giai-phap.html">Giải pháp</a>
+                  </li>
+                </ul>
+                <div class="doitac">
+                  <div class="container">
+                    <h1 class="title-news">GIẢI PHÁP</h1>
+                    <div class="card">
+                      <div class="card-item">
+                        <div class="rounded-borders">
+                          <img
+                            src="/image/cms.jpeg"
+                            alt="cms"
+                            style="width: 100%"
+                          />
+                        </div>
+                        <h3 style="margin-top: 33px">
+                          <a href="/web/cms.html">CMS</a>
+                        </h3>
+                        <hr />
+                        <p style="font-size: 14px">
+                          Giải pháp hệ thống Quản trị nội dung CMS
+                        </p>
+                        <br />
+                        <a href="/web/cms.html" class="button">Xem thêm</a>
+                        <br />
+                        <br />
+                      </div>
+                      <div class="card-item">
+                        <div class="rounded-borders">
+                          <img src="/image/e-learning.jpeg"" alt="E-Learning"
+                          style="width: 100%" />
+                        </div>
+                        <h3>
+                          <a href="/web/E-Learning.html">E-Learning</a>
+                        </h3>
+                        <hr />
+                        <p style="font-size: 14px">
+                          Giải pháp hệ thống học trực tuyến E-Learning
+                        </p>
+                        <br />
+                        <a href="/web/E-Learning.html" class="button"
+                          >Xem thêm</a
+                        >
+                        <br />
+                        <br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-xs-12 row-left">
+            <div class="company">
+              <div class="company-info">
+                <img src="/image/footerlogo.png" alt="" />
+              </div>
+              <div class="company-name">
+                <strong
+                  >Trung tâm Công nghệ thông tin - Tổng công ty Bưu Điện Việt
+                  Nam</strong
+                >
+              </div>
+              <div class="company-li">
+                <span class="fa-solid fa-location-dot"></span>
+                Địa chỉ: Số 05 đường Phạm Hùng - Mỹ Đình 2 - Nam Từ Liêm - Hà
+                Nội - Việt Nam
+              </div>
+              <div class="company-li">
+                <span class="fa-solid fa-phone"></span>
+
+                Điện thoại: 0243.768.9363
+              </div>
+              <div class="company-li">
+                <span class="fa-solid fa-envelope"></span>
+
+                Email: cntt@vnpost.vn
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12 visible">
+            <div class="box-footer">
+              <div class="title">GIỚI THIỆU</div>
+              <ul class="menus">
+                <li>
+                  <a href="/web/gioi-thieu-chung.html">Giới thiệu chung</a>
+                </li>
+                <li>
+                  <a href="/web/co-cau-to-chuc.html">Cơ cấu tổ chức</a>
+                </li>
+                <li>
+                  <a href="/web/sumenhtamnhin.html">Tầm nhìn, Sứ mệnh</a>
+                </li>
+                <li>
+                  <a href="/web/doi-tac-cong-nghe.html">Đối tác, Khách hàng</a>
+                </li>
+                <li>
+                  <a href="#">Nguồn lực</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12 visible">
+            <div class="box-footer">
+              <div class="title">TIN TỨC</div>
+              <ul class="menus">
+                <li>
+                  <a href="/web/tintuc.html">Tin VNPOST</a>
+                </li>
+                <li>
+                  <a href="/web/tintuc.html">Tin IT - VNPOST</a>
+                </li>
+                <li>
+                  <a href="#">Phản hồi của khách hàng</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-2 col-xs-12 visible">
+            <div class="box-footer">
+              <div class="title">SẢN PHẨM - DỊCH VỤ</div>
+              <ul class="menus">
+                <li>
+                  <a href="/web/giai-phap.html">Giải pháp Doanh nghiệp</a>
+                </li>
+                <li>
+                  <a href="/web/giai-phap.html">Giải pháp Giáo dục</a>
+                </li>
+                <li>
+                  <a href="/web/giai-phap.html">An toàn bảo mật</a>
+                </li>
+                <li>
+                  <a href="/web/giai-phap.html">Trung tâm dữ liệu</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-2 col-xs-12">
+            <div class="box-footer">
+              <div class="title">Kết nối</div>
+              <ul class="social">
+                <li>
+                  <a
+                    href="https://www.facebook.com/VNPostIT/"
+                    class="btn fb"
+                    target="_blank"
+                    ><span class="icon fa fa-facebook"></span
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCEVc8VAItMsg9Hg6J-H3xmQ"
+                    class="btn yt"
+                    target="_blank"
+                    ><span class="icon fa fa-youtube-play"></span
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/vietnam_post"
+                    class="btn tt"
+                    target="_blank"
+                    ><span class="icon fa fa-twitter"></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          Thành viên của
+          <span class="img">
+            <img src="/image/logo_white.png" alt="" style="height: 30px" />
+          </span>
+        </div>
+      </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <span class="fa-solid fa-angle-up"></span>
+    </button>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://kit.fontawesome.com/3c44c51b1b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/index.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="/owlcarousel/owl.carousel.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
